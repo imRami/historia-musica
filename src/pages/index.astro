@@ -132,14 +132,18 @@ const paises = [...new Set(historias.map(item => item.pais))];
 
 		<script define:vars={{ historias }}>
 
-						// Interruptor automático para apagar el loader
+			// Interruptor con tiempo de espera obligatorio (3 segundos)
 			window.addEventListener('load', () => {
 				const loader = document.getElementById('loader-pantalla');
 				if (loader) {
-					loader.classList.add('-translate-y-full', 'opacity-0');
-					setTimeout(() => loader.remove(), 700);
+					// Espera 3000 milisegundos (3 segundos) antes de activar la animación de salida
+					setTimeout(() => {
+						loader.classList.add('-translate-y-full', 'opacity-0');
+						setTimeout(() => loader.remove(), 700);
+					}, 3000); 
 				}
 			});
+
 
 
 			// === LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
