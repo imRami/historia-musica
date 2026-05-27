@@ -313,26 +313,32 @@ const paises = [...new Set(historias.map(item => item.pais))];
 						sobreGanado.push(poolDeFiguritas[indiceRandom]);
 					}
 
-					// Guardamos las figuritas adentro del perfil del usuario logueado
+					// 🔒 GUARDAMOS LAS FIGURITAS EN EL PERFIL DEL USUARIO ACTIVO
 					const usuarioActivo = sessionStorage.getItem('sesion-usuario-activa');
 					if (usuarioActivo) {
+						// Leemos la base de datos de usuarios registrados
 						let dbUsuarios = JSON.parse(localStorage.getItem('db-usuarios-registrados') || '{}');
-						let misFigus = dbUsuarios[usuarioActivo].figuritas || [];
 						
+						// Si el usuario no tiene la propiedad de figuritas creada, la inicializamos vacía
+						if (!dbUsuarios[usuarioActivo].figuritas) {
+							dbUsuarios[usuarioActivo].figuritas = [];
+						}
+						
+						// Agregamos las nuevas figuritas ganadas sin repetir
 						sobreGanado.forEach(figu => {
-							if (!misFigus.includes(Number(figu.numero))) {
-								misFigus.push(Number(figu.numero));
+							if (!dbUsuarios[usuarioActivo].figuritas.includes(Number(figu.numero))) {
+								dbUsuarios[usuarioActivo].figuritas.push(Number(figu.numero));
 							}
 						});
 
-						dbUsuarios[usuarioActivo].figuritas = misFigus;
+						// Guardamos la base de datos actualizada en el sistema
 						localStorage.setItem('db-usuarios-registrados', JSON.stringify(dbUsuarios));
 					}
 
-
-					// 🔒 GUARDAMOS EL MOMENTO EXACTO DE LA APERTURA
+					// Guardamos el momento exacto de la apertura para el reloj de 24hs
 					const ahoraMismo = new Date().getTime();
 					localStorage.setItem('ultima-apertura-sobre', ahoraMismo.toString());
+
 
 					// Mostramos las figuritas ganadas en pantalla
 					setTimeout(() => {
