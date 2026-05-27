@@ -98,6 +98,35 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			</section>
 
 			<section>
+
+							<!-- 🎁 BLOQUE DE CONTROL: LA TIENDA DE SOBRES DEL ÁLBUM -->
+			<section class="bg-gradient-to-r from-zinc-900/60 via-purple-950/20 to-zinc-900/40 border border-purple-900/40 rounded-2xl p-6 mb-12 relative overflow-hidden shadow-xl">
+				<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 relative z-10">
+					<div>
+						<span class="text-[10px] font-mono font-bold text-purple-400 uppercase bg-purple-950 px-2 py-0.5 rounded border border-purple-900/60">Álbum Virtual Activado</span>
+						<h3 class="text-xl font-black text-white tracking-tight mt-2">¡Reclamá tus sobres diarios!</h3>
+						<p class="text-zinc-400 text-xs mt-1">Conseguí 3 figuritas aleatorias para completar tu colección de álbumes sónicos.</p>
+					</div>
+					
+					<div class="flex items-center gap-4 shrink-0">
+						<!-- Botón Ir al Álbum -->
+						<a href="/album" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 text-xs font-mono px-4 py-2.5 rounded-xl transition">
+							📔 Ver mi Álbum
+						</a>
+						<!-- Botón Abrir Sobre -->
+						<button id="btn-abrir-sobre" class="bg-purple-600 hover:bg-purple-500 text-white text-xs font-mono font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-purple-900/30">
+							🎁 Abrir Paquete
+						</button>
+					</div>
+				</div>
+
+				<!-- Contenedor flotante invisible por defecto donde aparecerán las 3 figus ganadas -->
+				<div id="resultado-sobre" class="mt-6 pt-6 border-t border-purple-900/20 grid grid-cols-3 gap-4 hidden">
+					<!-- Se inyectan con JS -->
+				</div>
+			</section>
+
+
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{historias.map((artista) => (
 							<a 
@@ -149,6 +178,77 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			// === LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
 			const seccionEfemeride = document.getElementById('seccion-efemeride');
 			const efemerideContenido = document.getElementById('efemeride-contenido');
+
+
+
+						// === 🎰 MOTOR MATEMÁTICO: ALGORITMO DE APERTURA DE SOBRES ===
+			const btnAbrir = document.getElementById('btn-abrir-sobre');
+			const panelResultado = document.getElementById('resultado-sobre');
+
+			// Filtramos todos los discos que tienen número de figurita en nuestra base de datos
+			const poolDeFiguritas = historias.flatMap(artista => 
+				artista.trayectoria
+					.filter(hito => hito.numeroFigu)
+					.map(hito => ({
+						numero: hito.numeroFigu,
+						nombre: hito.disco,
+						imagen: hito.imagenDisco,
+						artista: artista.nombre
+					}))
+			);
+
+			if (btnAbrir) {
+				btnAbrir.addEventListener('click', () => {
+					if (poolDeFiguritas.length === 0) return;
+
+					// Deshabilitamos el botón un segundo para darle efecto de carga animada
+					btnAbrir.innerText = "⏳ Abriendo...";
+					btnAbrir.disabled = true;
+
+					// Sacamos 3 figuritas completamente al azar usando randomización matemática
+					let sobreGanado = [];
+					for (let i = 0; i < 3; i++) {
+						// Si hay pocas cargadas puede repetir, emulando la realidad de los paquetes Panini
+						const indiceRandom = Math.floor(Math.random() * poolDeFiguritas.length);
+						sobreGanado.push(poolDeFiguritas[indiceRandom]);
+					}
+
+					// Leemos la memoria del navegador para guardar las nuevas figuritas ganadas
+					let misFigus = JSON.parse(localStorage.getItem('mis-figuritas') || '[]');
+					
+					sobreGanado.forEach(figu => {
+						if (!misFigus.includes(Number(figu.numero))) {
+							misFigus.push(Number(figu.numero));
+						}
+					});
+
+					// Guardamos la nueva lista actualizada en la memoria de la computadora
+					localStorage.setItem('mis-figuritas', JSON.stringify(misFigus));
+
+					// Dibujamos las 3 figuritas en la pantalla con efecto visual
+					setTimeout(() => {
+						panelResultado.classList.remove('hidden');
+						panelResultado.innerHTML = sobreGanado.map(figu => `
+							<div class="bg-zinc-950 border border-purple-500/30 rounded-xl p-2 text-center animate-pulse">
+								<div class="aspect-square rounded-lg overflow-hidden border border-zinc-800">
+									<img src="${figu.imagen}" alt="${figu.nombre}" class="w-full h-full object-cover" />
+								</div>
+								<span class="text-[10px] font-mono text-purple-400 font-bold block mt-2">N° ${figu.numero}</span>
+								<h5 class="text-white text-[11px] font-bold truncate mt-0.5">${figu.nombre}</h5>
+							</div>
+						`).join('');
+
+						btnAbrir.innerText = "🎁 ¡Sobre Abierto!";
+						// Dejamos pasar un ratito y limpiamos el botón para volver a jugar
+						setTimeout(() => {
+							btnAbrir.innerText = "🎁 Abrir Paquete";
+							btnAbrir.disabled = false;
+						}, 2000);
+					}, 800);
+				});
+			}
+
+			
 
 			// Obtener fecha de hoy en formato DD-MM (ejemplo: "27-05")
 			const hoy = new Date();
