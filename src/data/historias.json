@@ -148,12 +148,14 @@
    {
     "slug": "charly-garcia",
     "nombre": "Charly García",
+    "tipo":"Solista",
     "pais": "Argentina",
     "genero": "Rock",
     "subgenero": "Rock Argentino / New Wave",
     "periodo": "1972 - Actualidad",
     "imagen": "/charlygarcia/charly.jpg",
     "resumen": "El genio absoluto del rock en español, pilar de Sui Generis, Serú Girán y una carrera solista revolucionaria.",
+    "historiaLarga":"Hablar de Charly García es hablar de una de las figuras más revolucionarias de la música latinoamericana. Pianista prodigio, compositor brillante y símbolo absoluto del rock nacional, su carrera atravesó más de cinco décadas de transformaciones artísticas, escándalos, himnos generacionales y una creatividad que redefinió el sonido de toda una época. \nMucho antes de convertirse en leyenda, Charly García era simplemente Carlos Alberto García Moreno, un niño nacido el 23 de octubre de 1951 en Buenos Aires. Desde muy pequeño mostró capacidades musicales extraordinarias. A los tres años ya tenía un oído absoluto sorprendente y, poco después, comenzó estudios formales de piano clásico. A los doce años obtuvo el título de profesor de piano, algo absolutamente inusual para alguien de su edad. \nSin embargo, el joven Charly no estaba interesado únicamente en Mozart o Chopin. A finales de los años 60 quedó fascinado con el fenómeno de The Beatles y el naciente rock internacional. Aquella mezcla entre formación académica y rebeldía juvenil terminaría convirtiéndose en la base de su estilo único.",
     "trayectoria": [
       {
         "etapa": "1983 - Modernidad Neoyorquina",
