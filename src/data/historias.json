@@ -4,7 +4,7 @@
     "nombre": "Soda Stereo",
     "pais": "Argentina",
     "genero": "Rock",
-    "subgenero": "New Wave / Post-Punk",
+    "subgenero": "New Wave / Post-Punk / Pop Rock / Rock Alternativo",
     "periodo": "1982 - 1997",
     "imagen": "/sodastereo/soda.jpg",
     "resumen": "La banda que conquistó el continente americano con su sonido vanguardista y la genialidad de Gustavo Cerati.",
@@ -13,98 +13,113 @@
         "etapa": "1984 - Álbum Debut",
         "detalle": "Lanzan su primer disco, Soda Stereo, producido por Federico Moura. La banda introduce una fuerte estética New Wave influenciada por bandas británicas como The Police y XTC, mezclando humor, ironía y sonidos frescos que revolucionaron el rock argentino.",
         "disco": "Soda Stereo (1984)",
-        "imagenDisco": "/sodastereo/sodastereodisco.jpg"
+        "imagenDisco": "/sodastereo/sodastereodisco.jpg",
+        "fechaEfemeride": "27-08"
       },
       {
         "etapa": "1985 - Explosión Popular",
         "detalle": "Con Nada Personal, la banda deja de ser una promesa under y se convierte en fenómeno masivo en Latinoamérica. El disco incorpora letras más sofisticadas y éxitos como “Cuando Pase el Temblor” y “Juego de Seducción”.",
         "disco": "Nada Personal (1985)",
-        "imagenDisco": "/sodastereo/nadapersonal.jpg"
+        "imagenDisco": "/sodastereo/nadapersonal.jpg",
+        "fechaEfemeride": "21-11"
       },
       {
         "etapa": "1986 - Consagración Internacional",
         "detalle": "Signos marca un salto artístico y compositivo. Las letras de Gustavo Cerati adquieren un tono más poético y oscuro, mientras la banda inicia grandes giras por América Latina con clásicos como “Persiana Americana” y “Prófugos”",
         "disco": "Signos (1986)",
-        "imagenDisco": "/sodastereo/signos.jpg"
+        "imagenDisco": "/sodastereo/signos.jpg",
+        "fechaEfemeride": "10-11"
       },
       {
         "etapa": "1987 - Primera Gran Gira en Vivo",
         "detalle": "Publican Ruido Blanco, su primer álbum en vivo, grabado durante la gira de Signos. Refleja la enorme convocatoria regional de Soda Stereo y la potencia de sus shows.",
         "disco": "Ruido Blanco (1987)",
-        "imagenDisco": "/sodastereo/ruidoblanco.jpg"
+        "imagenDisco": "/sodastereo/ruidoblanco.jpg",
+        "fechaEfemeride": "11-11"
       },
       {
         "etapa": "1988 - Sonido Más Maduro y Oscuro",
         "detalle": "Con Doble Vida, grabado en Nueva York y producido por Carlos Alomar, Soda Stereo adopta influencias funk, soul y rock sofisticado. Nacen himnos como “En la Ciudad de la Furia”.",
         "disco": "Doble Vida (1988)",
-        "imagenDisco": "/sodastereo/doblevida.jpg"
+        "imagenDisco": "/sodastereo/doblevida.jpg",
+        "fechaEfemeride": "11-10"
       },
       {
         "etapa": "1989 - Experimentación y Remixes",
         "detalle": "Editan Languis, un EP experimental con remixes y canciones inéditas. El grupo comienza a explorar sonidos más alternativos y menos comerciales.",
         "disco": "Languis (1989)",
-        "imagenDisco": "/sodastereo/languis.jpg"
+        "imagenDisco": "/sodastereo/languis.jpg",
+        "fechaEfemeride": "01-08"
       },
       {
         "etapa": "1990 - Consagración Continental",
         "detalle": "Graban 'Canción Animal' en Miami. El álbum abandona las texturas plásticas de los 80 para volcarse a un rock de guitarras potentes inspirado en el rock argentino de los 70.",
         "disco": "Canción Animal (1990)",
         "imagenDisco": "/sodastereo/cancion-animal.jpg",
-        "fechaEfemeride": "27-05"
+        "fechaEfemeride": "07-08"
       },
       {
         "etapa": "1991 - Etapa Remix y Dance Rock",
         "detalle": "Sale Rex Mix, un EP orientado a remixes y sonidos bailables. Aunque menor dentro de su discografía, muestra la constante búsqueda sonora del grupo.",
         "disco": "Rex Mix (1991)",
-        "imagenDisco": "/sodastereo/rexmix.jpg"
+        "imagenDisco": "/sodastereo/rexmix.jpg",
+        "fechaEfemeride": "29-11"
       },
       {
         "etapa": "1992 - La Era Experimental",
         "detalle": "Dynamo rompe completamente con el estilo anterior. Influenciados por el shoegaze y el rock alternativo, crean uno de los discos más innovadores del rock latino. Con el tiempo sería considerado una obra de culto.",
         "disco": "Dynamo (1992)",
-        "imagenDisco": "/sodastereo/dynamo.jpg"
+        "imagenDisco": "/sodastereo/dynamo.jpg",
+      "fechaEfemeride": "29-10"
       },
       {
         "etapa": "1993 - Recopilación y Transición",
         "detalle": "Publican Zona de Promesas, una recopilación de remixes y éxitos que funciona como cierre de una etapa antes de entrar a un sonido más electrónico y atmosférico.",
         "disco": "Zona de Promesas (1993)",
-        "imagenDisco": "/sodastereo/zonadepromesas.jpg"
+        "imagenDisco": "/sodastereo/zonadepromesas.jpg",
+        "fechaEfemeride": "01-09"
       },
       {
         "etapa": "1995 - Evolución Electrónica",
         "detalle": "Con Sueño Stereo, Soda Stereo mezcla rock alternativo, electrónica y ambient. El disco contiene temas icónicos como “Zoom” y “Ella Usó Mi Cabeza Como un Revólver”.",
         "disco": "Sueño Stereo (1995)",
-        "imagenDisco": "/sodastereo/sueñostereo.jpg"
+        "imagenDisco": "/sodastereo/sueñostereo.jpg",
+        "fechaEfemeride": "29-06"
       },
       {
         "etapa": "1996 - MTV Unplugged",
         "detalle": "Lanzan Comfort y Música para Volar, registrado para MTV. El álbum reinventa clásicos de la banda con arreglos acústicos y atmósferas más íntimas.",
         "disco": "Comfort y Música para Volar (1996)",
-        "imagenDisco": "/sodastereo/unplugged.jpg"
+        "imagenDisco": "/sodastereo/unplugged.jpg",
+        "fechaEfemeride": "25-09"
       },
       {
         "etapa": "1997 - Despedida de Soda Stereo",
         "detalle": "La banda realiza su histórica gira de despedida y publica El Último Concierto. El cierre queda inmortalizado con la frase de Cerati: “Gracias… totales”.",
         "disco": "El Último Concierto (1997)",
-        "imagenDisco": "/sodastereo/ultimoconcierto.jpg"
+        "imagenDisco": "/sodastereo/ultimoconcierto.jpg",
+        "fechaEfemeride": "20-09"
       },
       {
         "etapa": "2007 - Regreso Histórico",
         "detalle": "Soda Stereo vuelve temporalmente para la gira Me Verás Volver, reuniendo millones de personas en toda América Latina y demostrando su impacto generacional.",
         "disco": "Me Verás Volver (2007)",
-        "imagenDisco": "/sodastereo/2007.jpg"
+        "imagenDisco": "/sodastereo/2007.jpg",
+        "fechaEfemeride": "19-10"
       },
       {
         "etapa": "2008 - Registro Final en Vivo",
         "detalle": "Se publica el material en vivo de la gira de reunión, capturando el regreso más importante en la historia del rock latinoamericano.",
         "disco": "Gira Me Verás Volver (2008)",
-        "imagenDisco": "/sodastereo/2008.jpg"
+        "imagenDisco": "/sodastereo/2008.jpg",
+        "fechaEfemeride": "18-07"
       },
       {
         "etapa": "2017 - Homenaje con Cirque du Soleil",
         "detalle": "Se estrena SEP7IMO DÍA, espectáculo oficial del Cirque du Soleil inspirado en la música y universo visual de Soda Stereo.",
         "disco": "SEP7IMO DÍA (2017)",
-        "imagenDisco": "/sodastereo/septimodia.jpg"
+        "imagenDisco": "/sodastereo/septimodia.jpg",
+        "fechaEfemeride": "09-03"
       }
       
     ]
