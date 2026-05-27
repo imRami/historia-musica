@@ -1,0 +1,104 @@
+---
+import historias from '../data/historias.json';
+
+export async function getStaticPaths() {
+  return historias.map((artista) => ({
+    params: { banda: artista.slug },
+    props: { artista },
+  }));
+}
+
+const { artista } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{artista.nombre} | Trayectoria Histórica</title>
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 min-h-screen font-sans relative overflow-x-hidden selection:bg-purple-500 selection:text-white">
+    
+    <!-- Luces de Fondo sutiles -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[300px] pointer-events-none opacity-10 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-purple-500 via-transparent to-transparent -z-10"></div>
+
+    <!-- Contenedor Principal Centrado -->
+    <div class="max-w-4xl mx-auto px-6 pt-8 pb-24">
+      
+      <!-- 🔙 Botón Volver Limpio -->
+      <div class="mb-12">
+        <a href="/" class="inline-flex items-center gap-2 text-xs font-mono text-zinc-500 hover:text-purple-400 transition group">
+          <span class="transform group-hover:-translate-x-1 transition duration-200">←</span> Volver al catálogo
+        </a>
+      </div>
+
+      <!-- 💳 Cabecera Estilo Spotify (Imagen tipo Álbum + Textos al lado) -->
+      <header class="flex flex-col md:flex-row gap-8 items-center md:items-end border-b border-zinc-900 pb-12 mb-12">
+        
+        <!-- Contenedor de la foto de la banda (Cuadrado perfecto, no se deforma) -->
+        <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 bg-zinc-900 relative group">
+          <img 
+            src={artista.imagen} 
+            alt={artista.nombre} 
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Bloque de Textos e Información -->
+        <div class="text-center md:text-left flex-1">
+          <div class="flex flex-wrap justify-center md:justify-start items-center gap-2 text-[10px] font-mono tracking-widest text-purple-400 uppercase">
+            <span>{artista.pais}</span>
+            <span class="text-zinc-800">•</span>
+            <span>{artista.genero}</span>
+            <span class="text-zinc-800">•</span>
+            <span class="text-zinc-400">{artista.subgenero}</span>
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl font-black mt-3 tracking-tight text-white">
+            {artista.nombre}
+          </h1>
+          
+          <p class="text-xs font-mono text-zinc-500 mt-2">Período de actividad: {artista.periodo}</p>
+        </div>
+      </header>
+
+      <!-- 📝 Bloque de Resumen -->
+      <main>
+        <div class="bg-zinc-900/20 border border-zinc-900 rounded-2xl p-6 mb-16 relative">
+          <p class="text-zinc-300 text-sm leading-relaxed italic">
+            "{artista.resumen}"
+          </p>
+        </div>
+
+        <!-- Título de la sección cronológica -->
+        <h2 class="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-12 flex items-center gap-2">
+          <span>⏱️</span> Hitos de su Trayectoria
+        </h2>
+        
+        <!-- Eje Vertical de la Línea de Tiempo -->
+        <div class="relative border-l border-zinc-800/80 ml-4 md:ml-40 space-y-12">
+          {artista.trayectoria.map((hito) => (
+            <div class="relative pl-8 md:pl-12 group">
+              
+              <!-- Etapa / Año alineado a la izquierda -->
+              <div class="md:absolute md:-left-44 md:top-1 md:w-36 md:text-right font-mono text-xs font-bold text-purple-400 group-hover:text-purple-300 transition duration-300 mb-2 md:mb-0">
+                {hito.etapa}
+              </div>
+
+              <!-- Círculo indicador -->
+              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-purple-500 group-hover:bg-purple-500 transition-all duration-300 ring-4 ring-zinc-950"></div>
+              
+              <!-- Contenido del hito -->
+              <div class="bg-zinc-900/10 group-hover:bg-zinc-900/20 border border-zinc-900/60 group-hover:border-zinc-800 p-6 rounded-xl transition-all duration-300">
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                  {hito.detalle}
+                </p>
+              </div>
+
+            </div>
+          ))}
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html>
