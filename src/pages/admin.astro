@@ -1,0 +1,104 @@
+---
+// Panel Secreto de Administración de Sónica
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Panel de Administración | Sónica</title>
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 min-h-screen font-sans p-8 relative selection:bg-purple-500 selection:text-white">
+    
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[300px] pointer-events-none opacity-10 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-purple-500 via-transparent to-transparent -z-10"></div>
+
+    <div class="max-w-4xl mx-auto">
+      
+      <header class="border-b border-zinc-900 pb-6 mb-8">
+        <a href="/" class="text-xs font-mono text-zinc-500 hover:text-purple-400 transition block mb-2">← Volver a la Portada</a>
+        <h1 class="text-3xl font-black tracking-tight text-white flex items-center gap-2">
+          <span>⚙️</span> PANEL DE CONTROL SECRETO
+        </h1>
+        <p class="text-zinc-500 text-xs mt-1">Monitoreo de perfiles creados e interacción con el Álbum Virtual.</p>
+      </header>
+
+      <main class="bg-zinc-900/40 border border-zinc-900 rounded-2xl p-6 backdrop-blur-sm shadow-2xl">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-xs font-mono text-purple-400 uppercase tracking-widest font-bold">👤 Cuentas Registradas en el Sistema</h3>
+          <span id="contador-usuarios" class="text-xs font-mono bg-zinc-950 border border-zinc-800 px-3 py-1 rounded-full text-zinc-400">Total: 0 usuarios</span>
+        </div>
+
+        <!-- 📊 Tabla de Monitoreo -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-zinc-800 text-zinc-500 font-mono text-[10px] uppercase tracking-wider">
+                <th class="pb-3 pl-4">Usuario</th>
+                <th class="pb-3">Contraseña</th>
+                <th class="pb-3 text-center">Figuritas Pegadas</th>
+                <th class="pb-3 text-right pr-4">Estado del Álbum</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-usuarios-cuerpo" class="divide-y divide-zinc-900/60 font-medium text-sm text-zinc-300">
+              <!-- Los datos de los jugadores se inyectan acá con JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mensaje si no hay nadie registrado -->
+        <div id="sin-usuarios" class="text-center py-12 text-zinc-600 font-mono text-xs hidden">
+          📭 Todavía no se crearon perfiles de usuario en este navegador.
+        </div>
+      </main>
+
+    </div>
+
+    <!-- 🧠 Lógica para leer la DB del LocalStorage en tiempo real -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const tabla = document.getElementById('tabla-usuarios-cuerpo');
+        const contador = document.getElementById('contador-usuarios');
+        const avisoVacio = document.getElementById('sin-usuarios');
+
+        // Escaneamos la base de datos interna de usuarios
+        const dbUsuarios = JSON.parse(localStorage.getItem('db-usuarios-registrados') || '{}');
+        const nombresUsuarios = Object.keys(dbUsuarios);
+
+        if (contador) contador.innerText = `Total: ${nombresUsuarios.length} usuarios`;
+
+        if (nombresUsuarios.length === 0) {
+          if (avisoVacio) avisoVacio.classList.remove('hidden');
+          return;
+        }
+
+        if (tabla) {
+          tabla.innerHTML = nombresUsuarios.map(username => {
+            const datos = dbUsuarios[username];
+            const totalFigus = datos.figuritas ? datos.figuritas.length : 0;
+            
+            // Calculamos un porcentaje estimado de avance del juego
+            const porcentaje = Math.min(Math.round((totalFigus / 3) * 100), 100); // Base simulada sobre los 3 discos actuales
+
+            return `
+              <tr class="hover:bg-zinc-900/40 transition">
+                <td class="py-4 pl-4 font-bold text-zinc-100 flex items-center gap-2">
+                  <span class="text-xs">👤</span> ${username}
+                </td>
+                <td class="py-4 font-mono text-zinc-500 text-xs font-bold">
+                  ${datos.password}
+                </td>
+                <td class="py-4 text-center font-mono font-bold text-purple-400">
+                  ${totalFigus}
+                </td>
+                <td class="py-4 text-right pr-4">
+                  <span class="text-[10px] font-mono font-bold bg-purple-950/40 border border-purple-900/40 text-purple-300 px-2 py-0.5 rounded">
+                    ${porcentaje}% Completado
+                  </span>
+                </td>
+              </tr>
+            `;
+          }).join('');
+        }
+      });
+    </script>
+  </body>
+</html>
