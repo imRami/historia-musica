@@ -53,7 +53,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				</div>
 			</section>
 
-			<!-- 📅 SECCIÓN: UN DÍA COMO HOY EN LA MÚSICA (Efeméride Automatizada) -->
+			<!-- SECCIÓN: UN DÍA COMO HOY EN LA MÚSICA (Efeméride Automatizada) -->
 			<section id="seccion-efemeride" class="mb-12 hidden">
 				<div class="bg-gradient-to-r from-purple-950/40 via-zinc-900/50 to-zinc-900/20 border border-purple-900/50 rounded-2xl p-6 relative overflow-hidden shadow-xl shadow-purple-950/10">
 					<!-- Luz de neón de fondo para la efeméride -->
@@ -121,7 +121,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 		</main>
 
 				<script define:vars={{ historias }}>
-			// === 📅 LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
+			// === LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
 			const seccionEfemeride = document.getElementById('seccion-efemeride');
 			const efemerideContenido = document.getElementById('efemeride-contenido');
 
@@ -171,7 +171,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			}
 
 
-			// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO ===
+			// === LÓGICA DEL BUSCADOR PREDICTIVO ===
 			const input = document.getElementById('buscador-input');
 			const resultadosContenedor = document.getElementById('buscador-resultados');
 
@@ -216,7 +216,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				}
 			});
 
-			// === 🌍 LÓGICA DE BOTONES DE FILTRO ===
+			// === LÓGICA DE BOTONES DE FILTRO ===
 			const botones = document.querySelectorAll('.btn-filtro');
 			const tarjetas = document.querySelectorAll('.tarjeta-artista');
 

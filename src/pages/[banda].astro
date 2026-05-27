@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 
 const { artista } = Astro.props;
 
-// 🧠 LÓGICA DE RECOMENDACIÓN: Filtramos bandas del mismo género, excluyendo a la banda actual
+// LÓGICA DE RECOMENDACIÓN: Filtramos bandas del mismo género, excluyendo a la banda actual
 const recomendados = historias
   .filter((item) => item.genero === artista.genero && item.slug !== artista.slug)
   .slice(0, 2); // Mostramos un máximo de 2 recomendaciones para que quede estético
@@ -97,7 +97,7 @@ const recomendados = historias
             </div>
           ))}
         </div>
-        <!-- 🎵 RECOMENDACIONES INTELIGENTES (Aparece abajo de todo) -->
+        <!-- RECOMENDACIONES INTELIGENTES (Aparece abajo de todo) -->
         {recomendados.length > 0 && (
           <section class="border-t border-zinc-900 pt-16">
             <h3 class="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-8">
