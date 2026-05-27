@@ -1,0 +1,112 @@
+---
+import historias from '../data/historias.json';
+
+// Extraemos todos los hitos que tienen asignado un "numeroFigu" en el JSON
+const todasLasFigus = historias
+  .flatMap(artista => 
+    artista.trayectoria
+      .filter(hito => hito.numeroFigu)
+      .map(hito => ({
+        numero: hito.numeroFigu,
+        nombreDisco: hito.disco,
+        imagen: hito.imagenDisco,
+        artista: artista.nombre
+      }))
+  )
+  .sort((a, b) => Number(a.numero) - Number(b.numero));
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mi Álbum Sónico | Colección Digital</title>
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 min-h-screen font-sans relative overflow-x-hidden p-6 selection:bg-purple-500 selection:text-white">
+    
+    <!-- Luces de Fondo -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[300px] pointer-events-none opacity-10 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-purple-500 via-transparent to-transparent -z-10"></div>
+
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- Encabezado del Álbum -->
+      <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-900 pb-6 mb-12 gap-4">
+        <div>
+          <a href="/" class="text-xs font-mono text-zinc-500 hover:text-purple-400 transition block mb-2">← Volver al catálogo</a>
+          <h1 class="text-4xl font-black tracking-tight bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">MI ÁLBUM SÓNICO</h1>
+          <p class="text-zinc-500 text-xs mt-1">Coleccioná las portadas de los álbumes más importantes de la historia.</p>
+        </div>
+        <!-- Contador de progreso -->
+        <div class="bg-zinc-900 border border-zinc-800 px-4 py-2 rounded-xl font-mono text-xs">
+          🏆 Progreso: <span id="total-pegadas" class="text-purple-400 font-bold">0</span> / {todasLasFigus.length}
+        </div>
+      </header>
+
+      <!-- Grilla de Figuritas -->
+      <main class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        {todasLasFigus.map((figu) => (
+          <div 
+            data-figu-id={figu.numero}
+            class="figu-slot relative aspect-square bg-zinc-900/40 border border-zinc-900 rounded-2xl flex flex-col items-center justify-center overflow-hidden transition-all duration-500 group shadow-lg"
+          >
+            <!-- Vista cuando NO está pegada (Número gris de fondo) -->
+            <div class="non-owned absolute inset-0 flex flex-col items-center justify-center p-4">
+              <span class="text-4xl font-black text-zinc-800 group-hover:text-zinc-700 transition font-mono">{figu.numero}</span>
+              <span class="text-[9px] font-mono text-zinc-600 uppercase tracking-wider text-center mt-2 line-clamp-1">{figu.artista}</span>
+            </div>
+
+            <!-- Vista cuando SÍ está pegada (Imagen real oculta por defecto en CSS que se activa por JS) -->
+            <div class="owned absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-700 flex flex-col justify-end">
+              <img src={figu.imagen} alt={figu.nombreDisco} class="w-full h-full object-cover absolute inset-0 -z-10" />
+              <!-- Sombra para que se lea el texto del disco abajo -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              
+              <div class="p-3 relative z-10">
+                <span class="text-[9px] font-mono text-purple-400 font-bold block">{figu.artista}</span>
+                <h4 class="text-white text-xs font-bold font-sans truncate mt-0.5">{figu.nombreDisco}</h4>
+              </div>
+            </div>
+            
+            <!-- Efecto de brillo metalizado cuando se pega -->
+            <div class="brillo-efecto absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none"></div>
+          </div>
+        ))}
+      </main>
+
+    </div>
+
+    <!-- 🧠 Lógica para leer las figuritas de la memoria -->
+    <script define:vars={{ todasLasFigus }}>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Obtenemos la lista de figuritas guardadas del LocalStorage (si no hay, arranca vacía)
+        let misFigus = JSON.parse(localStorage.getItem('mis-figuritas') || '[]');
+
+        // Actualizamos el contador visual de la cabecera
+        const contadorHtml = document.getElementById('total-pegadas');
+        if (contadorHtml) contadorHtml.innerText = misFigus.length;
+
+        // Recorremos los casilleros de la pantalla y activamos los que el usuario ya tenga
+        const slots = document.querySelectorAll('.figu-slot');
+        slots.forEach(slot => {
+          const id = Number(slot.getAttribute('data-figu-id'));
+          
+          if (misFigus.includes(id)) {
+            // Ocultamos el número gris
+            const nonOwned = slot.querySelector('.non-owned');
+            if (nonOwned) nonOwned.style.display = 'none';
+
+            // Mostramos la foto a color con el brillo
+            const owned = slot.querySelector('.owned');
+            if (owned) {
+              owned.classList.remove('opacity-0', 'pointer-events-none');
+              owned.classList.add('opacity-100');
+            }
+            
+            // Le cambiamos el borde a un color violeta de coleccionista pegado
+            slot.classList.remove('border-zinc-900');
+            slot.classList.add('border-purple-500/40', 'shadow-purple-950/20');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
