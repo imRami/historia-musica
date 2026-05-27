@@ -181,11 +181,10 @@ const paises = [...new Set(historias.map(item => item.pais))];
 
 
 
-						// === 🎰 MOTOR MATEMÁTICO: ALGORITMO DE APERTURA DE SOBRES ===
+			// === 🎰 MOTOR MATEMÁTICO CON RELOJ DE ESPERA (24 HORAS) ===
 			const btnAbrir = document.getElementById('btn-abrir-sobre');
 			const panelResultado = document.getElementById('resultado-sobre');
 
-			// Filtramos todos los discos que tienen número de figurita en nuestra base de datos
 			const poolDeFiguritas = historias.flatMap(artista => 
 				artista.trayectoria
 					.filter(hito => hito.numeroFigu)
@@ -197,35 +196,77 @@ const paises = [...new Set(historias.map(item => item.pais))];
 					}))
 			);
 
+			// Función que controla el candado de las 24 horas y actualiza el reloj en pantalla
+			function verificarTemporizador() {
+				if (!btnAbrir) return;
+
+				const ultimaApertura = localStorage.getItem('ultima-apertura-sobre');
+				
+				if (ultimaApertura) {
+					const ahora = new Date().getTime();
+					const tiempoPasado = ahora - Number(ultimaApertura);
+					const veinticuatroHoras = 24 * 60 * 60 * 1000; // Tiempo en milisegundos
+
+					if (tiempoPasado < veinticuatroHoras) {
+						// Si no pasaron 24 horas, bloqueamos el botón y calculamos el tiempo restante
+						btnAbrir.disabled = true;
+						btnAbrir.classList.remove('bg-purple-600', 'hover:bg-purple-500');
+						btnAbrir.classList.add('bg-zinc-800', 'text-zinc-500', 'cursor-not-allowed');
+
+						const tiempoRestante = veinticuatroHoras - tiempoPasado;
+						
+						// Convertimos los milisegundos restantes a Horas, Minutos y Segundos
+						const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+						const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+
+						// Pintamos el reloj en vivo en el botón
+						btnAbrir.innerText = `⏱️ Próximo en: ${horas}h ${minutos}m ${segundos}s`;
+
+						// Ejecutamos la función otra vez en un segundo para mantener el reloj andando
+						setTimeout(verificarTemporizador, 1000);
+						return;
+					}
+				}
+
+				// Si ya pasó el día o es la primera vez, el botón se activa normal
+				btnAbrir.disabled = false;
+				btnAbrir.classList.add('bg-purple-600', 'hover:bg-purple-500');
+				btnAbrir.classList.remove('bg-zinc-800', 'text-zinc-500', 'cursor-not-allowed');
+				btnAbrir.innerText = "🎁 Abrir Paquete";
+			}
+
+			// Ejecutamos el chequeo apenas carga la página para ver si el botón debe estar bloqueado
+			document.addEventListener('DOMContentLoaded', verificarTemporizador);
+
 			if (btnAbrir) {
 				btnAbrir.addEventListener('click', () => {
-					if (poolDeFiguritas.length === 0) return;
+					if (poolDeFiguritas.length === 0 || btnAbrir.disabled) return;
 
-					// Deshabilitamos el botón un segundo para darle efecto de carga animada
 					btnAbrir.innerText = "⏳ Abriendo...";
 					btnAbrir.disabled = true;
 
-					// Sacamos 3 figuritas completamente al azar usando randomización matemática
+					// Sacamos las 3 figuritas al azar
 					let sobreGanado = [];
 					for (let i = 0; i < 3; i++) {
-						// Si hay pocas cargadas puede repetir, emulando la realidad de los paquetes Panini
 						const indiceRandom = Math.floor(Math.random() * poolDeFiguritas.length);
 						sobreGanado.push(poolDeFiguritas[indiceRandom]);
 					}
 
-					// Leemos la memoria del navegador para guardar las nuevas figuritas ganadas
+					// Las guardamos en el inventario del LocalStorage
 					let misFigus = JSON.parse(localStorage.getItem('mis-figuritas') || '[]');
-					
 					sobreGanado.forEach(figu => {
 						if (!misFigus.includes(Number(figu.numero))) {
 							misFigus.push(Number(figu.numero));
 						}
 					});
-
-					// Guardamos la nueva lista actualizada en la memoria de la computadora
 					localStorage.setItem('mis-figuritas', JSON.stringify(misFigus));
 
-					// Dibujamos las 3 figuritas en la pantalla con efecto visual
+					// 🔒 GUARDAMOS EL MOMENTO EXACTO DE LA APERTURA
+					const ahoraMismo = new Date().getTime();
+					localStorage.setItem('ultima-apertura-sobre', ahoraMismo.toString());
+
+					// Mostramos las figuritas ganadas en pantalla
 					setTimeout(() => {
 						panelResultado.classList.remove('hidden');
 						panelResultado.innerHTML = sobreGanado.map(figu => `
@@ -238,17 +279,14 @@ const paises = [...new Set(historias.map(item => item.pais))];
 							</div>
 						`).join('');
 
-						btnAbrir.innerText = "🎁 ¡Sobre Abierto!";
-						// Dejamos pasar un ratito y limpiamos el botón para volver a jugar
-						setTimeout(() => {
-							btnAbrir.innerText = "🎁 Abrir Paquete";
-							btnAbrir.disabled = false;
-						}, 2000);
+						// Activamos inmediatamente el reloj de cuenta regresiva
+						verificarTemporizador();
 					}, 800);
 				});
 			}
 
-			
+
+
 
 			// Obtener fecha de hoy en formato DD-MM (ejemplo: "27-05")
 			const hoy = new Date();
