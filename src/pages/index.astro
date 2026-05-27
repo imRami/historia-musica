@@ -145,21 +145,22 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				efemerideContenido.innerHTML = `
 					<div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
 						<div class="flex-1">
-							<h4 class="text-2xl font-black text-white tracking-tight">\${hitoEncontrado.etapa}</h4>
-							<p class="text-zinc-300 text-sm mt-2 leading-relaxed max-w-2xl">\${hitoEncontrado.detalle}</p>
+							<h4 class="text-2xl font-black text-white tracking-tight">${hitoEncontrado.etapa}</h4>
+							<p class="text-zinc-300 text-sm mt-2 leading-relaxed max-w-2xl">${hitoEncontrado.detalle}</p>
 							<div class="mt-4">
-								<a href="/\${artistaDelHito.slug}" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center gap-1">
-									Ver biografía completa de \${artistaDelHito.nombre} <span>→</span>
+								<a href="/${artistaDelHito.slug}" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center gap-1">
+									Ver biografía completa de ${artistaDelHito.nombre} <span>→</span>
 								</a>
 							</div>
 						</div>
-						\${hitoEncontrado.imagenDisco ? `
+						${hitoEncontrado.imagenDisco ? `
 							<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden border border-zinc-800 shadow-md">
 								<img src="${hitoEncontrado.imagenDisco}" alt="${hitoEncontrado.disco}" class="w-full h-full object-cover" />
 							</div>
 						` : ''}
 					</div>
 				`;
+
 			}
 
 			// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO ===
@@ -184,15 +185,21 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				if (filtrados.length > 0) {
 					resultadosContenedor.classList.remove('hidden');
 					resultadosContenedor.innerHTML = filtrados.map(artista => `
-						<a href="/\${artista.slug}" class="flex items-center gap-4 px-4 py-3 hover:bg-zinc-800/60 transition group border-b border-zinc-800/40 last:border-0">
+						<a href="/${artista.slug}" class="flex items-center gap-4 px-4 py-3 hover:bg-zinc-800/60 transition group border-b border-zinc-800/40 last:border-0">
 							<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-zinc-700">
+								<img src="${artista.imagen}" alt="${artista.nombre}" class="w-full h-full object-cover" />
+							</div>
+							<div class="flex-1 text-left">
+								<h4 class="text-sm font-bold text-zinc-200 group-hover:text-purple-400 transition">${artista.nombre}</h4>
+								<p class="text-[10px] font-mono text-zinc-500 mt-0.5">${artista.pais} • ${artista.subgenero}</p>
+							</div>
+							<span class="text-zinc-600 group-hover:text-purple-400 transition text-sm font-mono pr-1">→</span>
+						</a>
+					`).join('');
+				} else {
 
-						${artista.nombre}
-						\({artista.pais} •\){artista.subgenero}
-
-						→).join(''); } else { resultadosContenedor.classList.remove('hidden'); 
-						resultadosContenedor.innerHTML = ⚠️ No se encontraron artistas vinculados`;
 					}
+
 				});
 				document.addEventListener('click', (e) => {
 					if (!input.contains(e.target) && !resultadosContenedor.contains(e.target)) {
