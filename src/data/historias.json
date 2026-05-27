@@ -6,20 +6,20 @@
     "genero": "Rock",
     "subgenero": "New Wave / Post-Punk",
     "periodo": "1982 - 1997",
-    "imagen": "/soda.jpg",
+    "imagen": "/sodastereo/soda.jpg",
     "resumen": "La banda que conquistó el continente americano con su sonido vanguardista y la genialidad de Gustavo Cerati.",
     "trayectoria": [
       {
         "etapa": "1984 - Álbum Debut",
         "detalle": "Lanzan su disco homónimo 'Soda Stereo', producido por Federico Moura. El sonido New Wave revoluciona el circuito under con canciones pegadizas y estéticas disruptivas.",
         "disco": "Soda Stereo (1984)",
-        "imagenDisco": "/sodastereodisco.jpg"
+        "imagenDisco": "/sodastereo/sodastereodisco.jpg"
       },
       {
         "etapa": "1990 - Consagración Continental",
         "detalle": "Graban 'Canción Animal' en Miami. El álbum abandona las texturas plásticas de los 80 para volcarse a un rock de guitarras potentes inspirado en el rock argentino de los 70.",
         "disco": "Canción Animal (1990)",
-        "imagenDisco": "/cancion-animal.jpg"
+        "imagenDisco": "/sodastereo/cancion-animal.jpg"
       }
     ]
   },
@@ -40,5 +40,24 @@
         "imagenDisco": "/darkside.jpg"
       }
     ]
+  },
+   {
+    "slug": "charly-garcia",
+    "nombre": "Charly García",
+    "pais": "Argentina",
+    "genero": "Rock",
+    "subgenero": "Rock Argentino / New Wave",
+    "periodo": "1972 - Actualidad",
+    "imagen": "/charly.jpg",
+    "resumen": "El genio absoluto del rock en español, pilar de Sui Generis, Serú Girán y una carrera solista revolucionaria.",
+    "trayectoria": [
+      {
+        "etapa": "1983 - Modernidad Neoyorquina",
+        "detalle": "Graba en Nueva York 'Clics Modernos', introduciendo cajas de ritmos y sintetizadores avanzados, cambiando la sonoridad de toda la música latina.",
+        "disco": "Clics Modernos (1983)",
+        "imagenDisco": "/clics-modernos.jpg"
+      }
+    ]
   }
+
 ]
