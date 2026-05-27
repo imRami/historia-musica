@@ -121,7 +121,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 		</main>
 
 				<script define:vars={{ historias }}>
-			// === 📅 LÓGICA DE EFEMÉRIDES AUTOMÁTICAS ===
+			// === 📅 LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
 			const seccionEfemeride = document.getElementById('seccion-efemeride');
 			const efemerideContenido = document.getElementById('efemeride-contenido');
 
@@ -131,41 +131,45 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			const mes = String(hoy.getMonth() + 1).padStart(2, '0');
 			const fechaHoyTexto = `${dia}-${mes}`;
 
-			// Buscamos si algún hito coincide con el día de hoy
-			let hitoEncontrado = null;
-			let artistaDelHito = null;
+			// Creamos una lista vacía para guardar todas las coincidencias del día
+			let efemeridesDelDia = [];
 
+			// Recorremos todas las historias y guardamos cada hito que coincida con hoy
 			for (const artista of historias) {
-				const coincidencia = artista.trayectoria.find(h => h.fechaEfemeride === fechaHoyTexto);
-				if (coincidencia) {
-					hitoEncontrado = coincidencia;
-					artistaDelHito = artista;
-					break;
-				}
+				const coincidencias = artista.trayectoria.filter(h => h.fechaEfemeride === fechaHoyTexto);
+				coincidencias.forEach(hito => {
+					efemeridesDelDia.push({ hito, artista });
+				});
 			}
 
-			// Si hay hito hoy, armamos el diseño destacado y removemos el "hidden"
-			if (hitoEncontrado && artistaDelHito) {
+			// Si encontramos al menos una efeméride hoy, las dibujamos todas juntas
+			if (efemeridesDelDia.length > 0) {
 				seccionEfemeride.classList.remove('hidden');
-				efemerideContenido.innerHTML = `
-					<div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+				
+				// Mapeamos cada efeméride encontrada para meterlas una abajo de otra
+				efemerideContenido.innerHTML = efemeridesDelDia.map(({ hito, artista }, indice) => `
+					<div class="flex flex-col md:flex-row gap-6 items-start md:items-center ${indice > 0 ? 'border-t border-purple-900/40 pt-6 mt-6' : ''}">
 						<div class="flex-1">
-							<h4 class="text-2xl font-black text-white tracking-tight">${hitoEncontrado.etapa}</h4>
-							<p class="text-zinc-300 text-sm mt-2 leading-relaxed max-w-2xl">${hitoEncontrado.detalle}</p>
+							<span class="text-[10px] font-mono font-bold text-purple-400 bg-purple-950/60 border border-purple-900/50 px-2 py-0.5 rounded uppercase">
+								${artista.nombre}
+							</span>
+							<h4 class="text-2xl font-black text-white tracking-tight mt-2">${hito.etapa}</h4>
+							<p class="text-zinc-300 text-sm mt-2 leading-relaxed max-w-2xl">${hito.detalle}</p>
 							<div class="mt-4">
-								<a href="/${artistaDelHito.slug}" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center gap-1">
-									Ver biografía completa de ${artistaDelHito.nombre} <span>→</span>
+								<a href="/${artista.slug}" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center gap-1">
+									Ver biografía completa <span>→</span>
 								</a>
 							</div>
 						</div>
-						${hitoEncontrado.imagenDisco ? `
+						${hito.imagenDisco ? `
 							<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden border border-zinc-800 shadow-md">
-								<img src="${hitoEncontrado.imagenDisco}" alt="${hitoEncontrado.disco}" class="w-full h-full object-cover" />
+								<img src="${hito.imagenDisco}" alt="${hito.disco}" class="w-full h-full object-cover" />
 							</div>
 						` : ''}
 					</div>
-				`;
+				`).join('');
 			}
+
 
 			// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO ===
 			const input = document.getElementById('buscador-input');
