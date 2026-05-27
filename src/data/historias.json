@@ -19,7 +19,8 @@
         "etapa": "1990 - Consagración Continental",
         "detalle": "Graban 'Canción Animal' en Miami. El álbum abandona las texturas plásticas de los 80 para volcarse a un rock de guitarras potentes inspirado en el rock argentino de los 70.",
         "disco": "Canción Animal (1990)",
-        "imagenDisco": "/sodastereo/cancion-animal.jpg"
+        "imagenDisco": "/sodastereo/cancion-animal.jpg",
+        "fechaEfemeride": "27-05"
       }
     ]
   },
@@ -37,7 +38,8 @@
         "etapa": "1973 - El Prisma Revolucionario",
         "detalle": "Lanzan 'The Dark Side of the Moon', una obra cumbre de la ingeniería de sonido y el rock conceptual que explora la locura, el tiempo y la muerte.",
         "disco": "The Dark Side of the Moon (1973)",
-        "imagenDisco": "/darkside.jpg"
+        "imagenDisco": "/darkside.jpg",
+        "fechaEfemeride": "28-05"
       }
     ]
   },
@@ -55,7 +57,8 @@
         "etapa": "1983 - Modernidad Neoyorquina",
         "detalle": "Graba en Nueva York 'Clics Modernos', introduciendo cajas de ritmos y sintetizadores avanzados, cambiando la sonoridad de toda la música latina.",
         "disco": "Clics Modernos (1983)",
-        "imagenDisco": "/clics-modernos.jpg"
+        "imagenDisco": "/clics-modernos.jpg",
+        "fechaEfemeride": "29-05"
       }
     ]
   }
