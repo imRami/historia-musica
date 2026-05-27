@@ -7,33 +7,19 @@
     "subgenero": "New Wave / Post-Punk",
     "periodo": "1982 - 1997",
     "imagen": "/soda.jpg",
-    "spotifyUrl": "https://spotify.com",
     "resumen": "La banda que conquistó el continente americano con su sonido vanguardista y la genialidad de Gustavo Cerati.",
     "trayectoria": [
       {
-        "etapa": "Los Inicios (1982-1984)",
-        "detalle": "Gustavo Cerati, Zeta Bosio y Charly Alberti se unen influenciados por bandas británicas como The Police y The Cure. Lanzan su álbum debut homónimo en 1984 con hits como '¿Por qué no puedo ser del Jet Set?'."
+        "etapa": "1984 - Álbum Debut",
+        "detalle": "Lanzan su disco homónimo 'Soda Stereo', producido por Federico Moura. El sonido New Wave revoluciona el circuito under con canciones pegadizas y estéticas disruptivas.",
+        "disco": "Soda Stereo (1984)",
+        "imagenDisco": "/soda-1984.jpg"
       },
       {
-        "etapa": "La Consagración Continental (1985-1989)",
-        "detalle": "Con discos como 'Nada Personal' y 'Signos', la Sodamanía explota en toda Latinoamérica, marcando hitos de convocatoria en Chile, Perú y México."
-      }
-    ]
-  },
-  {
-    "slug": "luis-alberto-spinetta",
-    "nombre": "Luis Alberto Spinetta",
-    "pais": "Argentina",
-    "genero": "Rock",
-    "subgenero": "Rock Progresivo / Jazz Rock",
-    "periodo": "1967 - 2012",
-    "imagen": "/spinetta.jpg",
-    "spotifyUrl": "https://spotify.com",
-    "resumen": "El 'Flaco', uno de los padres fundadores del rock en español, creador de Almendra, Pescado Rabioso e Invisible.",
-    "trayectoria": [
-      {
-        "etapa": "Almendra y el Nacimiento (1967-1970)",
-        "detalle": "Lanza el icónico álbum de la tapa del payaso, fundando las bases de la poesía y el sonido del rock nacional argentino."
+        "etapa": "1990 - Consagración Continental",
+        "detalle": "Graban 'Canción Animal' en Miami. El álbum abandona las texturas plásticas de los 80 para volcarse a un rock de guitarras potentes inspirado en el rock argentino de los 70.",
+        "disco": "Canción Animal (1990)",
+        "imagenDisco": "/cancion-animal.jpg"
       }
     ]
   },
@@ -45,16 +31,13 @@
     "subgenero": "Rock Psicodélico / Progresivo",
     "periodo": "1965 - 1995",
     "imagen": "/pinkfloyd.jpg",
-    "spotifyUrl": "https://spotify.com",
-    "resumen": "Íconos de la música del siglo XXI, famosos por sus composiciones filosóficas, experimentos sonoros y portadas artísticas revolucionarias.",
+    "resumen": "Íconos de la música del siglo XXI, famosos por sus composiciones filosóficas y experimentos sonoros.",
     "trayectoria": [
       {
-        "etapa": "La Era Psicodélica con Syd Barrett (1965-1968)",
-        "detalle": "Liderados por la mente brillante y errática de Syd Barrett, irrumpen en la escena underground de Londres con el álbum 'The Piper at the Gates of Dawn'."
-      },
-      {
-        "etapa": "El Prisma y el Éxito Mundial (1973)",
-        "detalle": "Ya con David Gilmour en la guitarra, lanzan 'The Dark Side of the Moon', manteniéndose en las listas de éxitos por más de 700 semanas y redefiniendo el rock de estadios."
+        "etapa": "1973 - El Prisma Revolucionario",
+        "detalle": "Lanzan 'The Dark Side of the Moon', una obra cumbre de la ingeniería de sonido y el rock conceptual que explora la locura, el tiempo y la muerte.",
+        "disco": "The Dark Side of the Moon (1973)",
+        "imagenDisco": "/darkside.jpg"
       }
     ]
   }
