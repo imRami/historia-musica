@@ -73,10 +73,12 @@ const { artista } = Astro.props;
                 width="100%" 
                 height="152" 
                 allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; encrypted-media *;" 
+                sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-storage-access-by-user-activation"
                 loading="lazy"
                 class="border-0 block"
               ></iframe>
+
             </div>
           )}
         </div>
