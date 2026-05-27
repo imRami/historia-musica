@@ -120,7 +120,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			</section>
 		</main>
 
-		<script define:vars={{ historias }}>
+				<script define:vars={{ historias }}>
 			// === 📅 LÓGICA DE EFEMÉRIDES AUTOMÁTICAS ===
 			const seccionEfemeride = document.getElementById('seccion-efemeride');
 			const efemerideContenido = document.getElementById('efemeride-contenido');
@@ -129,7 +129,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			const hoy = new Date();
 			const dia = String(hoy.getDate()).padStart(2, '0');
 			const mes = String(hoy.getMonth() + 1).padStart(2, '0');
-			const fechaHoyTexto = `\({dia}-\){mes}`;
+			const fechaHoyTexto = `${dia}-${mes}`;
 
 			// Buscamos si algún hito coincide con el día de hoy
 			let hitoEncontrado = null;
@@ -140,7 +140,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				if (coincidencia) {
 					hitoEncontrado = coincidencia;
 					artistaDelHito = artista;
-					break; // Paramos al encontrar el primero
+					break;
 				}
 			}
 
@@ -165,7 +165,6 @@ const paises = [...new Set(historias.map(item => item.pais))];
 						` : ''}
 					</div>
 				`;
-
 			}
 
 			// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO ===
@@ -202,41 +201,44 @@ const paises = [...new Set(historias.map(item => item.pais))];
 						</a>
 					`).join('');
 				} else {
+					resultadosContenedor.classList.remove('hidden');
+					resultadosContenedor.innerHTML = `<div class="px-4 py-4 text-xs font-mono text-zinc-500 text-center">⚠️ No se encontraron artistas vinculados</div>`;
+				}
+			});
 
-					}
+			document.addEventListener('click', (e) => {
+				if (!input.contains(e.target) && !resultadosContenedor.contains(e.target)) {
+					resultadosContenedor.classList.add('hidden');
+				}
+			});
 
-				});
-				document.addEventListener('click', (e) => {
-					if (!input.contains(e.target) && !resultadosContenedor.contains(e.target)) {
-						resultadosContenedor.classList.add('hidden');
-					}
-				});
-				// === 🌍 LÓGICA DE BOTONES DE FILTRO ===
-				const botones = document.querySelectorAll('.btn-filtro');
-				const tarjetas = document.querySelectorAll('.tarjeta-artista');
+			// === 🌍 LÓGICA DE BOTONES DE FILTRO ===
+			const botones = document.querySelectorAll('.btn-filtro');
+			const tarjetas = document.querySelectorAll('.tarjeta-artista');
 
-				botones.forEach(boton => {
-					boton.addEventListener('click', () => {
-						const paisSeleccionado = boton.getAttribute('data-pais');
+			botones.forEach(boton => {
+				boton.addEventListener('click', () => {
+					const paisSeleccionado = boton.getAttribute('data-pais');
 
-						botones.forEach(b => {
-							b.classList.remove('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg',
-							 'shadow-purple-900/30', 'font-bold');
-							 b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
-							});
-							boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg',
-							'shadow-purple-900/30', 'font-bold');
-							boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+					botones.forEach(b => {
+						b.classList.remove('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 'shadow-purple-900/30', 'font-bold');
+						b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+					});
+					boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 'shadow-purple-900/30', 'font-bold');
+					boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
 
-							tarjetas.forEach(tarjeta => {
-								const paisTarjeta = tarjeta.getAttribute('data-target-pais');
-								if (paisSeleccionado === 'todos' || paisSeleccionado === paisTarjeta) {
-								tarjeta.style.display = 'flex';
-								setTimeout(() => tarjeta.classList.remove('opacity-0', 'scale-95'), 10);
-							} else {
-								tarjeta.classList.add('opacity-0', 'scale-95');
-								setTimeout(() => tarjeta.style.display = 'none', 150);
-							}
-						});
+					tarjetas.forEach(tarjeta => {
+						const paisTarjeta = tarjeta.getAttribute('data-target-pais');
+						if (paisSeleccionado === 'todos' || paisSeleccionado === paisTarjeta) {
+							tarjeta.style.display = 'flex';
+							setTimeout(() => tarjeta.classList.remove('opacity-0', 'scale-95'), 10);
+						} else {
+							tarjeta.classList.add('opacity-0', 'scale-95');
+							setTimeout(() => tarjeta.style.display = 'none', 150);
+						}
 					});
 				});
+			});
+		</script>
+	</body>
+</html>
