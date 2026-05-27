@@ -6,12 +6,13 @@
     "genero": "Rock",
     "subgenero": "New Wave / Post-Punk",
     "periodo": "1982 - 1997",
-    "imagen": "/sodastereo.jpg",
+    "imagen": "/soda.jpg",
+    "spotifyUrl": "https://spotify.com",
     "resumen": "La banda que conquistó el continente americano con su sonido vanguardista y la genialidad de Gustavo Cerati.",
     "trayectoria": [
       {
         "etapa": "Los Inicios (1982-1984)",
-        "detalle": "Gustavo Cerati, Zeta Bosio y Charly Alberti se unen influenciados por bandas británicas como The Police y The Cure. Lanzan su álbum debut homónimo in 1984 con hits como '¿Por qué no puedo ser del Jet Set?'."
+        "detalle": "Gustavo Cerati, Zeta Bosio y Charly Alberti se unen influenciados por bandas británicas como The Police y The Cure. Lanzan su álbum debut homónimo en 1984 con hits como '¿Por qué no puedo ser del Jet Set?'."
       },
       {
         "etapa": "La Consagración Continental (1985-1989)",
@@ -27,6 +28,7 @@
     "subgenero": "Rock Progresivo / Jazz Rock",
     "periodo": "1967 - 2012",
     "imagen": "/spinetta.jpg",
+    "spotifyUrl": "https://spotify.com",
     "resumen": "El 'Flaco', uno de los padres fundadores del rock en español, creador de Almendra, Pescado Rabioso e Invisible.",
     "trayectoria": [
       {
@@ -43,6 +45,7 @@
     "subgenero": "Rock Psicodélico / Progresivo",
     "periodo": "1965 - 1995",
     "imagen": "/pinkfloyd.jpg",
+    "spotifyUrl": "https://spotify.com",
     "resumen": "Íconos de la música del siglo XXI, famosos por sus composiciones filosóficas, experimentos sonoros y portadas artísticas revolucionarias.",
     "trayectoria": [
       {
