@@ -152,13 +152,111 @@
     "imagen": "/pinkfloyd/pinkfloydlogo.jpg",
     "resumen": "Íconos de la música del siglo XXI, famosos por sus composiciones filosóficas y experimentos sonoros.",
     "trayectoria": [
-      {
-        "etapa": "1973 - El Prisma Revolucionario",
-        "detalle": "Lanzan 'The Dark Side of the Moon', una obra cumbre de la ingeniería de sonido y el rock conceptual que explora la locura, el tiempo y la muerte.",
-        "disco": "The Dark Side of the Moon (1973)",
-        "imagenDisco": "/pinkfloyd/pinkfloyd.jpg",
-        "fechaEfemeride": "27-05"
-      }
+{
+  "etapa": "1967 - Psicodelia Espacial",
+  "detalle": "El debut de Pink Floyd introdujo una mezcla única de rock psicodélico, letras surrealistas y experimentación sonora liderada por Syd Barrett. El disco se convirtió en una pieza fundamental del movimiento underground británico.",
+  "disco": "The Piper at the Gates of Dawn (1967)",
+  "imagenDisco": "/pinkfloyd/thepiper.jpg",
+  "fechaEfemeride": "05-08"
+},
+{
+  "etapa": "1968 - Transición y Experimentación",
+  "detalle": "Tras la salida progresiva de Syd Barrett y la llegada de David Gilmour, la banda comenzó una etapa más experimental y atmosférica con composiciones largas e instrumentales.",
+  "disco": "A Saucerful of Secrets (1968)",
+  "imagenDisco": "/pinkfloyd/secret.jpg",
+  "fechaEfemeride": "29-06"
+},
+{
+  "etapa": "1969 - Banda Sonora Psicodélica",
+  "detalle": "Pink Floyd exploró sonidos acústicos y ambientales en la banda sonora de la película ‘More’, mostrando una faceta más versátil y cinematográfica.",
+  "disco": "More (1969)",
+  "imagenDisco": "/pinkfloyd/more.jpg",
+  "fechaEfemeride": "27-07"
+},
+{
+  "etapa": "1969 - Viaje Experimental",
+  "detalle": "Un álbum doble cargado de experimentación, suites instrumentales y colaboraciones orquestales que consolidaron el costado más progresivo de la banda.",
+  "disco": "Ummagumma (1969)",
+  "imagenDisco": "/pinkfloyd/ummagumma.jpg",
+  "fechaEfemeride": "07-11"
+},
+{
+  "etapa": "1970 - Rock Progresivo Cinemático",
+  "detalle": "Con largas composiciones instrumentales y estructuras complejas, Pink Floyd comenzó a acercarse al sonido épico que definiría la década siguiente.",
+  "disco": "Atom Heart Mother (1970)",
+  "imagenDisco": "/pinkfloyd/atom.jpg",
+  "fechaEfemeride": "10-10"
+},
+{
+  "etapa": "1971 - Búsqueda Existencial",
+  "detalle": "El disco mostró una banda más madura y conceptual, incorporando reflexiones filosóficas y canciones icónicas como “Echoes”.",
+  "disco": "Meddle (1971)",
+  "imagenDisco": "/pinkfloyd/meddle.jpg",
+  "fechaEfemeride": "31-10"
+},
+{
+  "etapa": "1972 - Sonido Cinematográfico",
+  "detalle": "Creado como banda sonora para la película francesa ‘La Vallée’, el álbum profundizó el uso de sintetizadores y paisajes sonoros ambientales.",
+  "disco": "Obscured by Clouds (1972)",
+  "imagenDisco": "/pinkfloyd/obscured.jpg",
+  "fechaEfemeride": "02-06"
+},
+{
+  "etapa": "1973 - La Obra Maestra Definitiva",
+  "detalle": "Con una producción revolucionaria y una temática sobre el tiempo, la locura y la vida moderna, el álbum transformó a Pink Floyd en una banda mundialmente legendaria.",
+  "disco": "The Dark Side of the Moon (1973)",
+  "imagenDisco": "/pinkfloyd/moon.jpg",
+  "fechaEfemeride": "01-03"
+},
+{
+  "etapa": "1975 - Homenaje y Nostalgia",
+  "detalle": "Inspirado en la ausencia de Syd Barrett y la crítica a la industria musical, el disco incluye clásicos como “Shine On You Crazy Diamond”.",
+  "disco": "Wish You Were Here (1975)",
+  "imagenDisco": "/pinkfloyd/wish.jpg",
+  "fechaEfemeride": "12-09"
+},
+{
+  "etapa": "1977 - Crítica Social y Oscuridad",
+  "detalle": "Roger Waters lideró un álbum agresivo y político inspirado en ‘Rebelión en la Granja’ de George Orwell, representando a la sociedad como distintos animales.",
+  "disco": "Animals (1977)",
+  "imagenDisco": "/pinkfloyd/animals.jpg",
+  "fechaEfemeride": "21-01"
+},
+{
+  "etapa": "1979 - La Ópera Rock Monumental",
+  "detalle": "Una de las obras conceptuales más importantes de la historia del rock. Roger Waters exploró el aislamiento, la fama y los traumas personales en una narrativa épica.",
+  "disco": "The Wall (1979)",
+  "imagenDisco": "/pinkfloyd/thewall.jpg",
+  "fechaEfemeride": "30-11"
+},
+{
+  "etapa": "1983 - El Final de una Era",
+  "detalle": "Marcado por tensiones internas, el álbum profundizó un sonido oscuro y melancólico inspirado en la guerra y el miedo nuclear.",
+  "disco": "The Final Cut (1983)",
+  "imagenDisco": "/pinkfloyd/final.jpg",
+  "fechaEfemeride": "21-03"
+},
+{
+  "etapa": "1987 - Renacimiento Sin Waters",
+  "detalle": "Tras la salida de Roger Waters, David Gilmour tomó el liderazgo y llevó a Pink Floyd hacia una nueva etapa con un sonido más moderno y atmosférico.",
+  "disco": "A Momentary Lapse of Reason (1987)",
+  "imagenDisco": "/pinkfloyd/reason.jpg",
+  "fechaEfemeride": "07-09"
+},
+{
+  "etapa": "1994 - Regreso Monumental",
+  "detalle": "El álbum consolidó la nueva formación de Pink Floyd y dio inicio a una gigantesca gira mundial que redefinió los espectáculos en vivo del rock.",
+  "disco": "The Division Bell (1994)",
+  "imagenDisco": "/pinkfloyd/bell.jpg",
+  "fechaEfemeride": "28-03"
+},
+{
+  "etapa": "2014 - Despedida Atmosférica",
+  "detalle": "Construido a partir de grabaciones inéditas de Richard Wright, el disco funcionó como una despedida emotiva y contemplativa de la banda.",
+  "disco": "The Endless River (2014)",
+  "imagenDisco": "/pinkfloyd/river.jpg",
+  "fechaEfemeride": "07-11"
+}
     ]
   },
    {
