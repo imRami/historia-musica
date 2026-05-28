@@ -972,7 +972,852 @@
       "fechaEfemeride": "19-11"
     }
   ]
-  }
+  },
+  {
+  "slug": "metallica",
+  "nombre": "Metallica",
+  "pais": "Estados Unidos",
+  "genero": "Metal",
+  "subgenero": "Thrash Metal / Heavy Metal / Speed Metal / Hard Rock",
+  "periodo": "1981 - Presente",
+  "imagen": "/metallica/metallica-logo.jpg",
+  "resumen": "Una de las bandas de metal más importantes de la historia, reconocida por popularizar el thrash metal y transformar el género en un fenómeno mundial.",
+  "historiaLarga": "Metallica nació en Los Ángeles en 1981 cuando el baterista Lars Ulrich publicó un anuncio buscando músicos para formar una banda de metal influenciada por la New Wave of British Heavy Metal. Poco después conoció al guitarrista y cantante James Hetfield, iniciando una sociedad musical histórica.\nMás tarde se sumaron Dave Mustaine y Cliff Burton, completando las primeras formaciones del grupo. Desde sus comienzos, Metallica destacó por una velocidad, agresividad y complejidad musical muy superiores a la mayoría de bandas de la época.\nTras mudarse a San Francisco, la banda comenzó a convertirse en una figura clave de la escena thrash metal underground junto a grupos como Slayer, Megadeth y Anthrax.\nEn 1983 lanzaron su álbum debut Kill 'Em All, iniciando una carrera que revolucionaría para siempre la historia del metal.",
+  "trayectoria": [
+    {
+      "etapa": "1983 - El Nacimiento del Thrash Metal",
+      "detalle": "Con velocidad extrema, riffs agresivos y una energía inédita para la época, Metallica redefinió el metal underground.",
+      "disco": "Kill 'Em All (1983)",
+      "imagenDisco": "/metallica/killemall.jpg",
+      "fechaEfemeride": "25-07"
+    },
+    {
+      "etapa": "1984 - Oscuridad y Velocidad",
+      "detalle": "La banda profundizó su sonido agresivo y técnico, consolidándose como una de las mayores fuerzas del thrash metal.",
+      "disco": "Ride the Lightning (1984)",
+      "imagenDisco": "/metallica/ridethelightning.jpg",
+      "fechaEfemeride": "27-07"
+    },
+    {
+      "etapa": "1986 - La Obra Maestra del Thrash",
+      "detalle": "Considerado uno de los mejores discos de metal de todos los tiempos, Master of Puppets llevó el género a un nuevo nivel artístico.",
+      "disco": "Master of Puppets (1986)",
+      "imagenDisco": "/metallica/masterofpuppets.jpg",
+      "fechaEfemeride": "03-03"
+    },
+    {
+      "etapa": "1988 - Técnica y Complejidad",
+      "detalle": "Tras la muerte de Cliff Burton, Metallica regresó con un disco más técnico y progresivo que mostró una enorme madurez musical.",
+      "disco": "...And Justice for All (1988)",
+      "imagenDisco": "/metallica/andjusticeforall.jpg",
+      "fechaEfemeride": "25-08"
+    },
+    {
+      "etapa": "1991 - Dominación Mundial",
+      "detalle": "El Black Album transformó a Metallica en una banda global gracias a himnos como “Enter Sandman” y “Nothing Else Matters”.",
+      "disco": "Metallica (1991)",
+      "imagenDisco": "/metallica/blackalbum.jpg",
+      "fechaEfemeride": "12-08"
+    },
+    {
+      "etapa": "1996 - Evolución y Controversia",
+      "detalle": "La banda adoptó un sonido más hard rock y alternativo, generando división entre fans y crítica.",
+      "disco": "Load (1996)",
+      "imagenDisco": "/metallica/load.jpg",
+      "fechaEfemeride": "04-06"
+    },
+    {
+      "etapa": "1997 - Continuidad Experimental",
+      "detalle": "Metallica continuó explorando sonidos más blueseros y alternativos manteniendo una estética completamente renovada.",
+      "disco": "Reload (1997)",
+      "imagenDisco": "/metallica/reload.jpg",
+      "fechaEfemeride": "18-11"
+    },
+    {
+      "etapa": "2003 - Caos y Agresividad",
+      "detalle": "St. Anger reflejó una de las etapas más conflictivas de la banda con un sonido crudo, pesado y experimental.",
+      "disco": "St. Anger (2003)",
+      "imagenDisco": "/metallica/stanger.jpg",
+      "fechaEfemeride": "05-06"
+    },
+    {
+      "etapa": "2008 - Regreso al Thrash",
+      "detalle": "La banda volvió a sus raíces más rápidas y agresivas recuperando elementos clásicos del thrash metal.",
+      "disco": "Death Magnetic (2008)",
+      "imagenDisco": "/metallica/deathmagnetic.jpg",
+      "fechaEfemeride": "12-09"
+    },
+    {
+      "etapa": "2016 - Renovación Moderna",
+      "detalle": "Con un sonido potente y contemporáneo, Metallica reafirmó su vigencia dentro del metal mundial.",
+      "disco": "Hardwired... to Self-Destruct (2016)",
+      "imagenDisco": "/metallica/hardwired.jpg",
+      "fechaEfemeride": "18-11"
+    },
+    {
+      "etapa": "2023 - Legado y Resistencia",
+      "detalle": "La banda regresó con un álbum cargado de energía y reflexión sobre el paso del tiempo y la permanencia en la historia del metal.",
+      "disco": "72 Seasons (2023)",
+      "imagenDisco": "/metallica/72seasons.jpg",
+      "fechaEfemeride": "14-04"
+    }
+  ]
+  },
+  {
+  "slug": "nirvana",
+  "nombre": "Nirvana",
+  "pais": "Estados Unidos",
+  "genero": "Rock",
+  "subgenero": "Grunge / Alternative Rock / Punk Rock",
+  "periodo": "1987 - 1994",
+  "imagen": "/nirvana/nirvana-logo.jpg",
+  "resumen": "Banda fundamental del movimiento grunge que revolucionó el rock de los años 90 con una mezcla de agresividad, sensibilidad y espíritu underground.",
+  "historiaLarga": "Nirvana nació en Aberdeen, Washington, a finales de los años 80 cuando Kurt Cobain y Krist Novoselic comenzaron a tocar juntos inspirados por el punk rock, el hardcore y la escena alternativa estadounidense. Tras pasar por distintos bateristas, la formación clásica se consolidó con la llegada de Dave Grohl en 1990.\nDurante sus primeros años, la banda formó parte del movimiento underground de Seattle, desarrollando un sonido crudo, melancólico y explosivo que más tarde sería conocido mundialmente como grunge.\nGracias al apoyo del sello Sub Pop y al crecimiento de la escena alternativa, Nirvana comenzó a ganar notoriedad rápidamente.\nEn 1989 lanzaron su álbum debut Bleach, iniciando una carrera breve pero histórica que cambiaría para siempre el rock de los años 90.",
+  "trayectoria": [
+    {
+      "etapa": "1989 - El Inicio Underground",
+      "detalle": "Con un sonido pesado, sucio y profundamente influenciado por el punk y el metal, Nirvana debutó dentro de la escena grunge de Seattle.",
+      "disco": "Bleach (1989)",
+      "imagenDisco": "/nirvana/bleach.jpg",
+      "fechaEfemeride": "15-06"
+    },
+    {
+      "etapa": "1991 - La Revolución Grunge",
+      "detalle": "Nevermind transformó a Nirvana en un fenómeno mundial gracias a himnos como “Smells Like Teen Spirit”, redefiniendo el rock alternativo.",
+      "disco": "Nevermind (1991)",
+      "imagenDisco": "/nirvana/nevermind.jpg",
+      "fechaEfemeride": "24-09"
+    },
+    {
+      "etapa": "1992 - Intimidad y Vulnerabilidad",
+      "detalle": "La compilación mostró el lado más sensible y experimental de Kurt Cobain a través de rarezas, lados B y grabaciones menos conocidas.",
+      "disco": "Incesticide (1992)",
+      "imagenDisco": "/nirvana/incesticide.jpg",
+      "fechaEfemeride": "14-12"
+    },
+    {
+      "etapa": "1993 - Oscuridad y Madurez",
+      "detalle": "In Utero presentó un sonido más crudo y agresivo, alejándose del éxito comercial para recuperar la esencia underground de la banda.",
+      "disco": "In Utero (1993)",
+      "imagenDisco": "/nirvana/inutero.jpg",
+      "fechaEfemeride": "21-09"
+    },
+    {
+      "etapa": "1994 - El Concierto Inmortal",
+      "detalle": "El MTV Unplugged mostró una faceta acústica y emocional de Nirvana, convirtiéndose en una de las presentaciones más legendarias de la historia del rock.",
+      "disco": "MTV Unplugged in New York (1994)",
+      "imagenDisco": "/nirvana/unplugged.jpg",
+      "fechaEfemeride": "01-11"
+    }
+  ]
+  },
+  {
+  "slug": "ramones",
+  "nombre": "Ramones",
+  "pais": "Estados Unidos",
+  "genero": "Punk Rock",
+  "subgenero": "Punk Rock / Proto-Punk / Hardcore Punk",
+  "periodo": "1974 - 1996",
+  "imagen": "/ramones/ramones-logo.jpg",
+  "resumen": "Banda pionera del punk rock que revolucionó la música con canciones rápidas, simples y directas, convirtiéndose en una influencia fundamental para generaciones enteras.",
+  "historiaLarga": "Ramones nació en Nueva York en 1974 cuando Joey Ramone, Johnny Ramone, Dee Dee Ramone y Tommy Ramone comenzaron a tocar juntos inspirados por el rock clásico, las girl bands de los años 60 y la crudeza del garage rock.\nAunque ninguno era un músico técnicamente virtuoso, la banda encontró rápidamente una identidad única basada en canciones cortas, veloces y extremadamente simples.\nTomando el apellido “Ramone” como identidad artística compartida, el grupo comenzó a tocar en el mítico club CBGB, convirtiéndose en una pieza clave del nacimiento de la escena punk neoyorquina.\nEn 1976 lanzaron su álbum debut Ramones, iniciando una carrera que cambiaría para siempre la historia del punk rock.",
+  "trayectoria": [
+    {
+      "etapa": "1976 - El Nacimiento del Punk",
+      "detalle": "Con canciones rápidas, crudas y directas, Ramones redefinió el rock y sentó las bases del punk moderno.",
+      "disco": "Ramones (1976)",
+      "imagenDisco": "/ramones/ramones1976.jpg",
+      "fechaEfemeride": "23-04"
+    },
+    {
+      "etapa": "1977 - Velocidad y Rebeldía",
+      "detalle": "La banda profundizó su estilo acelerado y energético con himnos fundamentales del punk rock.",
+      "disco": "Leave Home (1977)",
+      "imagenDisco": "/ramones/leavehome.jpg",
+      "fechaEfemeride": "10-01"
+    },
+    {
+      "etapa": "1977 - Punk en Estado Puro",
+      "detalle": "Rocket to Russia consolidó a Ramones como una de las bandas más importantes del movimiento punk internacional.",
+      "disco": "Rocket to Russia (1977)",
+      "imagenDisco": "/ramones/rockettorussia.jpg",
+      "fechaEfemeride": "04-11"
+    },
+    {
+      "etapa": "1978 - Energía en Vivo",
+      "detalle": "Uno de los discos en vivo más influyentes del punk capturó toda la velocidad y caos de la banda sobre el escenario.",
+      "disco": "It's Alive (1978)",
+      "imagenDisco": "/ramones/itsalive.jpg",
+      "fechaEfemeride": "22-04"
+    },
+    {
+      "etapa": "1978 - Expansión Musical",
+      "detalle": "Ramones comenzó a incorporar melodías más elaboradas sin abandonar la esencia punk característica.",
+      "disco": "Road to Ruin (1978)",
+      "imagenDisco": "/ramones/roadtoruin.jpg",
+      "fechaEfemeride": "21-09"
+    },
+    {
+      "etapa": "1980 - Punk y Pop",
+      "detalle": "Con producción de Phil Spector, la banda experimentó un sonido más pulido y melódico.",
+      "disco": "End of the Century (1980)",
+      "imagenDisco": "/ramones/endofthecentury.jpg",
+      "fechaEfemeride": "04-02"
+    },
+    {
+      "etapa": "1981 - Regreso a la Agresividad",
+      "detalle": "Pleasant Dreams mostró una mezcla entre melodías pop y la velocidad clásica de Ramones.",
+      "disco": "Pleasant Dreams (1981)",
+      "imagenDisco": "/ramones/pleasantdreams.jpg",
+      "fechaEfemeride": "29-07"
+    },
+    {
+      "etapa": "1983 - Hardcore y Oscuridad",
+      "detalle": "La banda endureció nuevamente su sonido influenciada por el hardcore punk emergente.",
+      "disco": "Subterranean Jungle (1983)",
+      "imagenDisco": "/ramones/subterranejungle.jpg",
+      "fechaEfemeride": "11-02"
+    },
+    {
+      "etapa": "1984 - Velocidad Extrema",
+      "detalle": "Too Tough to Die representó un regreso más agresivo y callejero para la banda.",
+      "disco": "Too Tough to Die (1984)",
+      "imagenDisco": "/ramones/tootoughtodie.jpg",
+      "fechaEfemeride": "01-10"
+    },
+    {
+      "etapa": "1986 - Madurez Punk",
+      "detalle": "Animal Boy mostró a una banda más madura manteniendo intacta su identidad rebelde.",
+      "disco": "Animal Boy (1986)",
+      "imagenDisco": "/ramones/animalboy.jpg",
+      "fechaEfemeride": "19-05"
+    },
+    {
+      "etapa": "1989 - Oscuridad y Crítica Social",
+      "detalle": "Brain Drain incluyó algunos de los últimos grandes himnos de la banda, como “Pet Sematary”.",
+      "disco": "Brain Drain (1989)",
+      "imagenDisco": "/ramones/braindrain.jpg",
+      "fechaEfemeride": "23-03"
+    },
+    {
+      "etapa": "1995 - La Despedida Final",
+      "detalle": "El último álbum de estudio de Ramones cerró la historia de una de las bandas más importantes del punk rock.",
+      "disco": "¡Adios Amigos! (1995)",
+      "imagenDisco": "/ramones/adiosamigos.jpg",
+      "fechaEfemeride": "18-07"
+    }
+  ]
+  },
+  {
+  "slug": "the-who",
+  "nombre": "The Who",
+  "pais": "Reino Unido",
+  "genero": "Rock",
+  "subgenero": "Hard Rock / Mod Rock / Rock Ópera / Power Pop",
+  "periodo": "1964 - Presente",
+  "imagen": "/thewho/thewho-logo.jpg",
+  "resumen": "Una de las bandas más influyentes del rock británico, reconocida por sus explosivos conciertos, óperas rock y enorme impacto en la evolución del rock moderno.",
+  "historiaLarga": "The Who nació en Londres a comienzos de los años 60 cuando Roger Daltrey formó una banda junto a Pete Townshend y John Entwistle, músicos que compartían intereses por el rock and roll estadounidense y la creciente cultura mod británica. Poco tiempo después se sumó Keith Moon, completando una de las formaciones más icónicas de la historia del rock.\nDesde sus primeros años, The Who se diferenció por la energía salvaje de sus conciertos, destruyendo instrumentos y llevando las presentaciones en vivo a un nivel completamente nuevo.\nLa banda rápidamente ganó popularidad en la escena británica gracias a su mezcla de hard rock, melodías pop y actitud rebelde.\nCon el paso del tiempo, The Who se convirtió en pionera de las óperas rock y una de las agrupaciones más importantes e influyentes del siglo XX.",
+  "trayectoria": [
+    {
+      "etapa": "1965 - El Nacimiento Mod",
+      "detalle": "The Who debutó oficialmente capturando la energía rebelde de la juventud británica y el movimiento mod.",
+      "disco": "My Generation (1965)",
+      "imagenDisco": "/thewho/mygeneration.jpg",
+      "fechaEfemeride": "03-12"
+    },
+    {
+      "etapa": "1966 - Expansión Psicodélica",
+      "detalle": "La banda comenzó a experimentar con sonidos más complejos y una producción más ambiciosa.",
+      "disco": "A Quick One (1966)",
+      "imagenDisco": "/thewho/aquickone.jpg",
+      "fechaEfemeride": "09-12"
+    },
+    {
+      "etapa": "1967 - Psicodelia Británica",
+      "detalle": "The Who incorporó influencias psicodélicas y estructuras más elaboradas en uno de sus discos más creativos.",
+      "disco": "The Who Sell Out (1967)",
+      "imagenDisco": "/thewho/thewhosellout.jpg",
+      "fechaEfemeride": "15-12"
+    },
+    {
+      "etapa": "1969 - La Primera Gran Ópera Rock",
+      "detalle": "Tommy revolucionó el rock conceptual contando una historia completa a través de un álbum doble monumental.",
+      "disco": "Tommy (1969)",
+      "imagenDisco": "/thewho/tommy.jpg",
+      "fechaEfemeride": "23-05"
+    },
+    {
+      "etapa": "1971 - Hard Rock y Reflexión",
+      "detalle": "Who's Next consolidó a la banda como una de las más importantes del mundo gracias a himnos como “Baba O'Riley”.",
+      "disco": "Who's Next (1971)",
+      "imagenDisco": "/thewho/whosnext.jpg",
+      "fechaEfemeride": "14-08"
+    },
+    {
+      "etapa": "1973 - Ambición y Complejidad",
+      "detalle": "Pete Townshend expandió el concepto de ópera rock con una obra mucho más experimental y filosófica.",
+      "disco": "Quadrophenia (1973)",
+      "imagenDisco": "/thewho/quadrophenia.jpg",
+      "fechaEfemeride": "19-10"
+    },
+    {
+      "etapa": "1975 - Madurez Musical",
+      "detalle": "La banda exploró sonidos más sofisticados y personales en una nueva etapa artística.",
+      "disco": "The Who by Numbers (1975)",
+      "imagenDisco": "/thewho/thewhobynumbers.jpg",
+      "fechaEfemeride": "03-10"
+    },
+    {
+      "etapa": "1978 - El Último Disco con Keith Moon",
+      "detalle": "Who Are You marcó el final de una era tras la muerte del legendario baterista Keith Moon.",
+      "disco": "Who Are You (1978)",
+      "imagenDisco": "/thewho/whoareyou.jpg",
+      "fechaEfemeride": "18-08"
+    },
+    {
+      "etapa": "1981 - Renovación y Resistencia",
+      "detalle": "Con una formación renovada, The Who continuó evolucionando hacia sonidos más modernos y electrónicos.",
+      "disco": "Face Dances (1981)",
+      "imagenDisco": "/thewho/facedances.jpg",
+      "fechaEfemeride": "16-03"
+    },
+    {
+      "etapa": "1982 - La Despedida Inicial",
+      "detalle": "It's Hard fue concebido como el último álbum de la banda antes de su primera separación oficial.",
+      "disco": "It's Hard (1982)",
+      "imagenDisco": "/thewho/itshard.jpg",
+      "fechaEfemeride": "04-09"
+    },
+    {
+      "etapa": "2006 - El Regreso Moderno",
+      "detalle": "Décadas después, The Who regresó con nuevo material manteniendo intacta la esencia clásica de la banda.",
+      "disco": "Endless Wire (2006)",
+      "imagenDisco": "/thewho/endlesswire.jpg",
+      "fechaEfemeride": "30-10"
+    },
+    {
+      "etapa": "2019 - Legado Viviente",
+      "detalle": "La banda volvió con un sonido contemporáneo demostrando su vigencia dentro de la historia del rock.",
+      "disco": "Who (2019)",
+      "imagenDisco": "/thewho/who2019.jpg",
+      "fechaEfemeride": "06-12"
+    }
+  ]
+  },
+  {
+  "slug": "alice-in-chains",
+  "nombre": "Alice in Chains",
+  "pais": "Estados Unidos",
+  "genero": "Rock",
+  "subgenero": "Grunge / Alternative Metal / Heavy Metal / Sludge Metal",
+  "periodo": "1987 - Presente",
+  "imagen": "/aliceinchains/aliceinchains-logo.jpg",
+  "resumen": "Banda fundamental del movimiento grunge reconocida por sus armonías oscuras, riffs pesados y letras profundamente emocionales.",
+  "historiaLarga": "Alice in Chains nació en Seattle a finales de los años 80 cuando Jerry Cantrell conoció al cantante Layne Staley dentro de la creciente escena alternativa de la ciudad. Junto al bajista Mike Starr y el baterista Sean Kinney formaron una banda que mezclaba metal, hard rock y la melancolía característica del grunge.\nDesde sus primeros años, Alice in Chains destacó por su sonido oscuro y pesado, además de las armonías vocales entre Layne Staley y Jerry Cantrell, que se convertirían en una de las marcas más distintivas del grupo.\nLa banda comenzó tocando en pequeños clubes de Seattle mientras la escena grunge crecía junto a grupos como Nirvana, Soundgarden y Pearl Jam.\nCon el lanzamiento de Facelift en 1990, Alice in Chains se convirtió en una de las primeras bandas grunge en alcanzar éxito masivo, iniciando una carrera marcada por la intensidad emocional y musical.",
+  "trayectoria": [
+    {
+      "etapa": "1990 - El Inicio Oscuro del Grunge",
+      "detalle": "Alice in Chains debutó con un sonido pesado y sombrío que mezclaba metal y grunge, destacando con canciones como “Man in the Box”.",
+      "disco": "Facelift (1990)",
+      "imagenDisco": "/aliceinchains/facelift.jpg",
+      "fechaEfemeride": "21-08"
+    },
+    {
+      "etapa": "1992 - La Obra Maestra Melancólica",
+      "detalle": "Dirt consolidó a la banda como uno de los pilares del grunge gracias a letras oscuras y riffs inolvidables.",
+      "disco": "Dirt (1992)",
+      "imagenDisco": "/aliceinchains/dirt.jpg",
+      "fechaEfemeride": "29-09"
+    },
+    {
+      "etapa": "1994 - Intimidad Acústica",
+      "detalle": "Jar of Flies mostró un costado más introspectivo y acústico, convirtiéndose en uno de los lanzamientos más aclamados de la banda.",
+      "disco": "Jar of Flies (1994)",
+      "imagenDisco": "/aliceinchains/jarofflies.jpg",
+      "fechaEfemeride": "25-01"
+    },
+    {
+      "etapa": "1995 - Oscuridad Total",
+      "detalle": "El álbum homónimo profundizó el tono depresivo y experimental del grupo durante una etapa personal muy difícil para Layne Staley.",
+      "disco": "Alice in Chains (1995)",
+      "imagenDisco": "/aliceinchains/selftitled.jpg",
+      "fechaEfemeride": "07-11"
+    },
+    {
+      "etapa": "2009 - Renacimiento de la Banda",
+      "detalle": "Tras años de silencio y la muerte de Layne Staley, Alice in Chains regresó con William DuVall manteniendo la esencia clásica del grupo.",
+      "disco": "Black Gives Way to Blue (2009)",
+      "imagenDisco": "/aliceinchains/blackgiveswaytoblue.jpg",
+      "fechaEfemeride": "29-09"
+    },
+    {
+      "etapa": "2013 - Continuidad y Madurez",
+      "detalle": "La banda consolidó su nueva etapa con un sonido pesado y atmosférico fiel a sus raíces.",
+      "disco": "The Devil Put Dinosaurs Here (2013)",
+      "imagenDisco": "/aliceinchains/thedevilputdinosaurshere.jpg",
+      "fechaEfemeride": "28-05"
+    },
+    {
+      "etapa": "2018 - Oscuridad Moderna",
+      "detalle": "Alice in Chains continuó evolucionando con composiciones más densas y reflexivas manteniendo intacta su identidad sombría.",
+      "disco": "Rainier Fog (2018)",
+      "imagenDisco": "/aliceinchains/rainierfog.jpg",
+      "fechaEfemeride": "24-08"
+    }
+  ]
+  },
+  {
+  "slug": "ub40",
+  "nombre": "UB40",
+  "pais": "Reino Unido",
+  "genero": "Reggae",
+  "subgenero": "Reggae Pop / Dub / Ska / Pop Reggae",
+  "periodo": "1978 - Presente",
+  "imagen": "/ub40/ub40-logo.jpg",
+  "resumen": "Banda británica que popularizó el reggae a nivel mundial mezclando ritmos jamaiquinos con pop y sonidos accesibles para las masas.",
+  "historiaLarga": "UB40 nació en Birmingham, Inglaterra, a finales de los años 70 cuando un grupo de amigos apasionados por el reggae y la música jamaicana decidió formar una banda inspirada por artistas como Bob Marley y Jimmy Cliff. Entre sus integrantes principales estaban Ali Campbell, Robin Campbell, Brian Travers y Earl Falconer.\nEl nombre UB40 proviene de un formulario británico de desempleo (“Unemployment Benefit, Form 40”), reflejando el contexto social y económico que vivían muchos jóvenes en aquella época.\nDesde sus comienzos, la banda destacó por combinar reggae, dub y pop con letras sobre desigualdad social, desempleo y política.\nCon el paso de los años, UB40 se convirtió en una de las bandas de reggae más exitosas de todos los tiempos gracias a éxitos globales y una enorme capacidad para acercar el reggae al público masivo.",
+  "trayectoria": [
+    {
+      "etapa": "1980 - El Debut Social y Político",
+      "detalle": "UB40 debutó con letras de crítica social y un sonido reggae influenciado por el dub y la cultura jamaicana.",
+      "disco": "Signing Off (1980)",
+      "imagenDisco": "/ub40/signingoff.jpg",
+      "fechaEfemeride": "29-08"
+    },
+    {
+      "etapa": "1981 - Consolidación Reggae",
+      "detalle": "La banda continuó desarrollando un reggae más accesible y melódico mientras crecía su popularidad en Reino Unido.",
+      "disco": "Present Arms (1981)",
+      "imagenDisco": "/ub40/presentarms.jpg",
+      "fechaEfemeride": "15-05"
+    },
+    {
+      "etapa": "1982 - Experimentación y Dub",
+      "detalle": "UB40 exploró sonidos más profundos y atmosféricos ligados al dub jamaicano.",
+      "disco": "UB44 (1982)",
+      "imagenDisco": "/ub40/ub44.jpg",
+      "fechaEfemeride": "27-08"
+    },
+    {
+      "etapa": "1983 - El Salto Internacional",
+      "detalle": "Con versiones de clásicos reggae, la banda comenzó a alcanzar reconocimiento global y éxito comercial masivo.",
+      "disco": "Labour of Love (1983)",
+      "imagenDisco": "/ub40/labouroflove.jpg",
+      "fechaEfemeride": "12-09"
+    },
+    {
+      "etapa": "1985 - Reggae Pop Mundial",
+      "detalle": "UB40 consolidó un sonido más pop sin perder la esencia reggae que definía a la banda.",
+      "disco": "Baggariddim (1985)",
+      "imagenDisco": "/ub40/baggariddim.jpg",
+      "fechaEfemeride": "26-08"
+    },
+    {
+      "etapa": "1988 - Éxito Absoluto",
+      "detalle": "La banda alcanzó uno de sus momentos más populares con canciones románticas y grandes éxitos internacionales.",
+      "disco": "UB40 (1988)",
+      "imagenDisco": "/ub40/ub401988.jpg",
+      "fechaEfemeride": "10-10"
+    },
+    {
+      "etapa": "1989 - Romanticismo y Popularidad",
+      "detalle": "Labour of Love II profundizó la fórmula de reinterpretar clásicos reggae con enorme éxito comercial.",
+      "disco": "Labour of Love II (1989)",
+      "imagenDisco": "/ub40/labouroflove2.jpg",
+      "fechaEfemeride": "23-10"
+    },
+    {
+      "etapa": "1993 - Dominio de las Radios",
+      "detalle": "Con “Can't Help Falling in Love”, UB40 alcanzó una de las etapas más exitosas de toda su carrera.",
+      "disco": "Promises and Lies (1993)",
+      "imagenDisco": "/ub40/promisesandlies.jpg",
+      "fechaEfemeride": "27-09"
+    },
+    {
+      "etapa": "2001 - Regreso a las Raíces",
+      "detalle": "La banda volvió a enfocarse en sonidos más clásicos del reggae y el dub tradicional.",
+      "disco": "Cover Up (2001)",
+      "imagenDisco": "/ub40/coverup.jpg",
+      "fechaEfemeride": "05-11"
+    },
+    {
+      "etapa": "2019 - Legado Reggae",
+      "detalle": "Décadas después de su formación, UB40 continuó manteniendo vivo su estilo característico y su influencia global.",
+      "disco": "For the Many (2019)",
+      "imagenDisco": "/ub40/forthemany.jpg",
+      "fechaEfemeride": "15-03"
+    }
+  ]
+  },
+  {
+  "slug": "roxette",
+  "nombre": "Roxette",
+  "pais": "Suecia",
+  "genero": "Pop",
+  "subgenero": "Pop Rock / Soft Rock / Dance Pop",
+  "periodo": "1986 - 2016",
+  "imagen": "/roxette/roxette-logo.jpg",
+  "resumen": "Dúo sueco que conquistó el pop mundial con melodías inolvidables, baladas románticas y enormes éxitos radiales durante las décadas de los 80 y 90.",
+  "historiaLarga": "Roxette nació en Suecia a mediados de los años 80 cuando Per Gessle, reconocido músico y compositor sueco, invitó a Marie Fredriksson a colaborar en un nuevo proyecto musical. Ambos ya tenían carreras dentro de la escena local, pero la combinación de sus estilos generó una química inmediata.\nEl dúo comenzó mezclando pop rock melódico, baladas y sonidos modernos influenciados por el pop internacional de la época.\nAunque inicialmente su éxito se concentró en Escandinavia, todo cambió cuando canciones como “The Look” comenzaron a sonar en radios internacionales, impulsando a Roxette al estrellato global.\nCon el paso de los años, el dúo se convirtió en una de las agrupaciones pop más exitosas de Europa, acumulando múltiples éxitos mundiales y millones de discos vendidos.",
+  "trayectoria": [
+    {
+      "etapa": "1986 - El Inicio Escandinavo",
+      "detalle": "Roxette debutó mostrando un pop melódico fresco que rápidamente ganó popularidad en Suecia.",
+      "disco": "Pearls of Passion (1986)",
+      "imagenDisco": "/roxette/pearlsofpassion.jpg",
+      "fechaEfemeride": "31-10"
+    },
+    {
+      "etapa": "1988 - La Explosión Internacional",
+      "detalle": "Con canciones como “The Look” y “Listen to Your Heart”, Roxette alcanzó fama mundial y dominó las radios pop.",
+      "disco": "Look Sharp! (1988)",
+      "imagenDisco": "/roxette/looksharp.jpg",
+      "fechaEfemeride": "21-10"
+    },
+    {
+      "etapa": "1991 - Baladas y Consagración",
+      "detalle": "El dúo consolidó su éxito global con himnos románticos y una producción más madura.",
+      "disco": "Joyride (1991)",
+      "imagenDisco": "/roxette/joyride.jpg",
+      "fechaEfemeride": "28-03"
+    },
+    {
+      "etapa": "1992 - Éxito Cinematográfico",
+      "detalle": "Roxette alcanzó enorme repercusión internacional gracias a la canción “It Must Have Been Love” y nuevas baladas exitosas.",
+      "disco": "Tourism (1992)",
+      "imagenDisco": "/roxette/tourism.jpg",
+      "fechaEfemeride": "28-08"
+    },
+    {
+      "etapa": "1994 - Pop Moderno y Emotivo",
+      "detalle": "La banda exploró sonidos más contemporáneos manteniendo las melodías características que definían su identidad.",
+      "disco": "Crash! Boom! Bang! (1994)",
+      "imagenDisco": "/roxette/crashboombang.jpg",
+      "fechaEfemeride": "11-04"
+    },
+    {
+      "etapa": "1996 - Madurez Musical",
+      "detalle": "Roxette mostró un sonido más adulto y sofisticado sin perder el enfoque pop que los hizo famosos.",
+      "disco": "Baladas en Español (1996)",
+      "imagenDisco": "/roxette/baladasenespanol.jpg",
+      "fechaEfemeride": "06-02"
+    },
+    {
+      "etapa": "1999 - Renovación Sonora",
+      "detalle": "La banda incorporó elementos electrónicos y una producción más moderna adaptándose al pop de finales de los 90.",
+      "disco": "Have a Nice Day (1999)",
+      "imagenDisco": "/roxette/haveaniceday.jpg",
+      "fechaEfemeride": "23-02"
+    },
+    {
+      "etapa": "2001 - Reflexión y Sensibilidad",
+      "detalle": "Room Service mostró una etapa más introspectiva y emocional dentro de la carrera del dúo.",
+      "disco": "Room Service (2001)",
+      "imagenDisco": "/roxette/roomservice.jpg",
+      "fechaEfemeride": "02-04"
+    },
+    {
+      "etapa": "2011 - El Regreso Esperado",
+      "detalle": "Tras años alejados de la actividad intensa, Roxette volvió con nuevo material y giras internacionales.",
+      "disco": "Charm School (2011)",
+      "imagenDisco": "/roxette/charmschool.jpg",
+      "fechaEfemeride": "11-02"
+    },
+    {
+      "etapa": "2012 - Continuidad y Nostalgia",
+      "detalle": "El dúo mantuvo viva su esencia clásica mientras continuaba conectando con nuevas generaciones.",
+      "disco": "Travelling (2012)",
+      "imagenDisco": "/roxette/travelling.jpg",
+      "fechaEfemeride": "23-03"
+    },
+    {
+      "etapa": "2016 - El Último Capítulo",
+      "detalle": "Good Karma marcó una de las últimas etapas discográficas de Roxette antes del cierre definitivo del proyecto.",
+      "disco": "Good Karma (2016)",
+      "imagenDisco": "/roxette/goodkarma.jpg",
+      "fechaEfemeride": "03-06"
+    }
+  ]
+  },
+  {
+  "slug": "bon-jovi",
+  "nombre": "Bon Jovi",
+  "pais": "Estados Unidos",
+  "genero": "Rock",
+  "subgenero": "Hard Rock / Glam Metal / Arena Rock / Pop Rock",
+  "periodo": "1983 - Presente",
+  "imagen": "/bonjovi/bonjovi-logo.jpg",
+  "resumen": "Una de las bandas de rock más exitosas del mundo, reconocida por sus himnos de estadio, baladas inolvidables y enorme impacto en el rock de los años 80 y 90.",
+  "historiaLarga": "Bon Jovi nació en Nueva Jersey a comienzos de los años 80 cuando Jon Bon Jovi comenzó a grabar canciones y demos mientras trabajaba en estudios de grabación. Tras ganar cierta atención local con la canción “Runaway”, Jon decidió formar una banda estable junto a Richie Sambora, David Bryan, Alec John Such y Tico Torres.\nLa química entre los integrantes rápidamente convirtió al grupo en una de las propuestas más prometedoras de la escena hard rock estadounidense.\nDurante sus primeros años, Bon Jovi mezcló glam metal, hard rock y melodías pop accesibles, logrando conectar tanto con el público rockero como con las radios comerciales.\nCon el paso del tiempo, la banda se transformó en un fenómeno global gracias a himnos generacionales y giras multitudinarias alrededor del mundo.",
+  "trayectoria": [
+    {
+      "etapa": "1984 - El Debut de Nueva Jersey",
+      "detalle": "Bon Jovi debutó con un sonido hard rock melódico que comenzó a llamar la atención dentro de la escena estadounidense.",
+      "disco": "Bon Jovi (1984)",
+      "imagenDisco": "/bonjovi/bonjovi1984.jpg",
+      "fechaEfemeride": "21-01"
+    },
+    {
+      "etapa": "1985 - Energía y Glam Metal",
+      "detalle": "La banda profundizó su estilo de arena rock y glam metal con un sonido más explosivo y comercial.",
+      "disco": "7800° Fahrenheit (1985)",
+      "imagenDisco": "/bonjovi/7800fahrenheit.jpg",
+      "fechaEfemeride": "27-03"
+    },
+    {
+      "etapa": "1986 - La Explosión Mundial",
+      "detalle": "Slippery When Wet convirtió a Bon Jovi en una superpotencia global gracias a himnos como “Livin’ on a Prayer”.",
+      "disco": "Slippery When Wet (1986)",
+      "imagenDisco": "/bonjovi/slipperywhenwet.jpg",
+      "fechaEfemeride": "18-08"
+    },
+    {
+      "etapa": "1988 - Consagración de Estadios",
+      "detalle": "La banda consolidó su dominio del rock mundial con uno de los discos más exitosos de finales de los 80.",
+      "disco": "New Jersey (1988)",
+      "imagenDisco": "/bonjovi/newjersey.jpg",
+      "fechaEfemeride": "19-09"
+    },
+    {
+      "etapa": "1992 - Reinventarse en los 90",
+      "detalle": "Bon Jovi dejó atrás parte de la estética glam y adoptó un sonido más maduro y moderno.",
+      "disco": "Keep the Faith (1992)",
+      "imagenDisco": "/bonjovi/keepthefaith.jpg",
+      "fechaEfemeride": "03-11"
+    },
+    {
+      "etapa": "1995 - Rock y Sensibilidad",
+      "detalle": "Con baladas emotivas y un enfoque más introspectivo, la banda mostró una evolución artística importante.",
+      "disco": "These Days (1995)",
+      "imagenDisco": "/bonjovi/thesedays.jpg",
+      "fechaEfemeride": "27-06"
+    },
+    {
+      "etapa": "2000 - Regreso Triunfal",
+      "detalle": "Bon Jovi volvió al centro de la escena mundial con himnos modernos como “It’s My Life”.",
+      "disco": "Crush (2000)",
+      "imagenDisco": "/bonjovi/crush.jpg",
+      "fechaEfemeride": "13-06"
+    },
+    {
+      "etapa": "2002 - Optimismo y Rock Moderno",
+      "detalle": "La banda continuó adaptándose al nuevo siglo manteniendo intacta su esencia de arena rock.",
+      "disco": "Bounce (2002)",
+      "imagenDisco": "/bonjovi/bounce.jpg",
+      "fechaEfemeride": "08-10"
+    },
+    {
+      "etapa": "2005 - Regreso a las Raíces",
+      "detalle": "Bon Jovi recuperó elementos clásicos del rock estadounidense con letras más sociales y reflexivas.",
+      "disco": "Have a Nice Day (2005)",
+      "imagenDisco": "/bonjovi/haveaniceday.jpg",
+      "fechaEfemeride": "20-09"
+    },
+    {
+      "etapa": "2007 - Country y Rock Americano",
+      "detalle": "La banda exploró influencias country y sonidos más tradicionales del rock norteamericano.",
+      "disco": "Lost Highway (2007)",
+      "imagenDisco": "/bonjovi/losthighway.jpg",
+      "fechaEfemeride": "19-06"
+    },
+    {
+      "etapa": "2009 - Reflexión y Madurez",
+      "detalle": "Bon Jovi presentó un disco más introspectivo centrado en experiencias personales y sociales.",
+      "disco": "The Circle (2009)",
+      "imagenDisco": "/bonjovi/thecircle.jpg",
+      "fechaEfemeride": "10-11"
+    },
+    {
+      "etapa": "2013 - Evolución sin Richie Sambora",
+      "detalle": "La banda enfrentó cambios internos importantes mientras mantenía su presencia global.",
+      "disco": "What About Now (2013)",
+      "imagenDisco": "/bonjovi/whataboutnow.jpg",
+      "fechaEfemeride": "08-03"
+    },
+    {
+      "etapa": "2020 - Reflexión Contemporánea",
+      "detalle": "Bon Jovi abordó temas sociales y personales modernos en una nueva etapa artística.",
+      "disco": "2020 (2020)",
+      "imagenDisco": "/bonjovi/2020.jpg",
+      "fechaEfemeride": "02-10"
+    }
+  ]
+  },
+  {
+  "slug": "rem",
+  "nombre": "R.E.M.",
+  "pais": "Estados Unidos",
+  "genero": "Rock",
+  "subgenero": "Alternative Rock / College Rock / Folk Rock / Jangle Pop",
+  "periodo": "1980 - 2011",
+  "imagen": "/rem/rem-logo.jpg",
+  "resumen": "Banda pionera del rock alternativo que marcó a generaciones con letras introspectivas, melodías melancólicas y una enorme influencia en la música de los años 80 y 90.",
+  "historiaLarga": "R.E.M. nació en Athens, Georgia, a comienzos de los años 80 cuando Michael Stipe, Peter Buck, Mike Mills y Bill Berry comenzaron a tocar juntos dentro de la creciente escena universitaria estadounidense.\nDesde sus primeros ensayos, la banda desarrolló un sonido distintivo basado en guitarras melódicas, letras enigmáticas y una fuerte influencia del folk rock y el post-punk.\nDurante gran parte de los años 80, R.E.M. se convirtió en uno de los pilares del llamado college rock, construyendo una enorme reputación dentro del circuito independiente.\nCon el paso del tiempo, la banda alcanzó reconocimiento mundial y terminó siendo considerada una de las agrupaciones más influyentes en la historia del rock alternativo.",
+  "trayectoria": [
+    {
+      "etapa": "1983 - El Inicio del College Rock",
+      "detalle": "R.E.M. debutó con un sonido melódico y misterioso que redefinió la escena alternativa estadounidense.",
+      "disco": "Murmur (1983)",
+      "imagenDisco": "/rem/murmur.jpg",
+      "fechaEfemeride": "12-04"
+    },
+    {
+      "etapa": "1984 - Expansión Creativa",
+      "detalle": "La banda profundizó su estilo introspectivo y atmosférico consolidando su identidad musical.",
+      "disco": "Reckoning (1984)",
+      "imagenDisco": "/rem/reckoning.jpg",
+      "fechaEfemeride": "09-04"
+    },
+    {
+      "etapa": "1985 - Folk y Melancolía",
+      "detalle": "R.E.M. incorporó influencias folk y un enfoque más emocional en sus composiciones.",
+      "disco": "Fables of the Reconstruction (1985)",
+      "imagenDisco": "/rem/fablesofthereconstruction.jpg",
+      "fechaEfemeride": "10-06"
+    },
+    {
+      "etapa": "1986 - Madurez Alternativa",
+      "detalle": "La banda alcanzó un nuevo nivel artístico con canciones más complejas y una producción más refinada.",
+      "disco": "Lifes Rich Pageant (1986)",
+      "imagenDisco": "/rem/lifesrichpageant.jpg",
+      "fechaEfemeride": "28-07"
+    },
+    {
+      "etapa": "1987 - El Salto Comercial",
+      "detalle": "Document acercó a R.E.M. al público masivo gracias a himnos como “The One I Love”.",
+      "disco": "Document (1987)",
+      "imagenDisco": "/rem/document.jpg",
+      "fechaEfemeride": "31-08"
+    },
+    {
+      "etapa": "1988 - Experimentación y Éxito",
+      "detalle": "La banda comenzó una etapa más ambiciosa musicalmente mientras crecía su popularidad internacional.",
+      "disco": "Green (1988)",
+      "imagenDisco": "/rem/green.jpg",
+      "fechaEfemeride": "07-11"
+    },
+    {
+      "etapa": "1991 - La Consagración Mundial",
+      "detalle": "Out of Time convirtió a R.E.M. en una banda global gracias a canciones históricas como “Losing My Religion”.",
+      "disco": "Out of Time (1991)",
+      "imagenDisco": "/rem/outoftime.jpg",
+      "fechaEfemeride": "12-03"
+    },
+    {
+      "etapa": "1992 - Oscuridad y Reflexión",
+      "detalle": "Automatic for the People mostró el lado más melancólico y profundo de la banda en uno de sus discos más aclamados.",
+      "disco": "Automatic for the People (1992)",
+      "imagenDisco": "/rem/automaticforthepeople.jpg",
+      "fechaEfemeride": "05-10"
+    },
+    {
+      "etapa": "1994 - Rock y Energía",
+      "detalle": "R.E.M. regresó a un sonido más directo y eléctrico manteniendo la sensibilidad característica de la banda.",
+      "disco": "Monster (1994)",
+      "imagenDisco": "/rem/monster.jpg",
+      "fechaEfemeride": "27-09"
+    },
+    {
+      "etapa": "1996 - Experimentación Moderna",
+      "detalle": "La banda incorporó elementos electrónicos y nuevas texturas sonoras en una etapa más experimental.",
+      "disco": "New Adventures in Hi-Fi (1996)",
+      "imagenDisco": "/rem/newadventuresinhifi.jpg",
+      "fechaEfemeride": "09-09"
+    },
+    {
+      "etapa": "1998 - Continuidad Tras la Pérdida",
+      "detalle": "Luego de la salida del baterista Bill Berry, R.E.M. continuó como trío explorando nuevos caminos musicales.",
+      "disco": "Up (1998)",
+      "imagenDisco": "/rem/up.jpg",
+      "fechaEfemeride": "26-10"
+    },
+    {
+      "etapa": "2001 - Sonido Electrónico y Alternativo",
+      "detalle": "La banda profundizó la experimentación sonora mientras mantenía su esencia melódica e introspectiva.",
+      "disco": "Reveal (2001)",
+      "imagenDisco": "/rem/reveal.jpg",
+      "fechaEfemeride": "14-05"
+    },
+    {
+      "etapa": "2004 - Regreso al Rock Directo",
+      "detalle": "R.E.M. recuperó parte de su energía rockera clásica en una nueva etapa creativa.",
+      "disco": "Around the Sun (2004)",
+      "imagenDisco": "/rem/aroundthesun.jpg",
+      "fechaEfemeride": "04-10"
+    },
+    {
+      "etapa": "2008 - Renovación de Energía",
+      "detalle": "La banda volvió a un sonido más potente y dinámico cercano a sus raíces alternativas.",
+      "disco": "Accelerate (2008)",
+      "imagenDisco": "/rem/accelerate.jpg",
+      "fechaEfemeride": "31-03"
+    },
+    {
+      "etapa": "2011 - La Despedida Final",
+      "detalle": "Collapse into Now marcó el último capítulo discográfico de una de las bandas más importantes del rock alternativo.",
+      "disco": "Collapse into Now (2011)",
+      "imagenDisco": "/rem/collapseintonow.jpg",
+      "fechaEfemeride": "07-03"
+    }
+  ]
+  },
+  {
+  "slug": "extreme",
+  "nombre": "Extreme",
+  "pais": "Estados Unidos",
+  "genero": "Rock",
+  "subgenero": "Hard Rock / Funk Metal / Glam Metal / Alternative Rock",
+  "periodo": "1985 - Presente",
+  "imagen": "/extreme/extreme-logo.jpg",
+  "resumen": "Banda estadounidense reconocida por combinar hard rock virtuoso, funk metal y baladas acústicas que marcaron los años 90.",
+  "historiaLarga": "Extreme nació en Boston, Massachusetts, a mediados de los años 80 cuando el vocalista Gary Cherone y el guitarrista Nuno Bettencourt comenzaron a tocar juntos influenciados por el hard rock, el funk y el metal de la época. Más tarde se sumaron Pat Badger y Paul Geary, completando la formación clásica de la banda.\nDesde sus comienzos, Extreme destacó por el virtuosismo de Nuno Bettencourt en guitarra y por una propuesta musical mucho más técnica y diversa que otras bandas de hard rock del momento.\nAunque inicialmente formaron parte de la escena glam metal estadounidense, el grupo rápidamente desarrolló una identidad propia mezclando funk, rock pesado y armonías melódicas.\nCon el paso de los años, Extreme se convirtió en una de las bandas más reconocidas del hard rock gracias a éxitos globales y una enorme capacidad musical.",
+  "trayectoria": [
+    {
+      "etapa": "1989 - El Debut Virtuoso",
+      "detalle": "Extreme debutó mostrando una mezcla explosiva de hard rock, funk y virtuosismo instrumental.",
+      "disco": "Extreme (1989)",
+      "imagenDisco": "/extreme/extreme1989.jpg",
+      "fechaEfemeride": "14-03"
+    },
+    {
+      "etapa": "1990 - Éxito Mundial y Baladas",
+      "detalle": "Pornograffitti llevó a la banda al estrellato internacional gracias a canciones como “More Than Words”.",
+      "disco": "Extreme II: Pornograffitti (1990)",
+      "imagenDisco": "/extreme/pornograffitti.jpg",
+      "fechaEfemeride": "07-08"
+    },
+    {
+      "etapa": "1992 - Ambición y Complejidad",
+      "detalle": "La banda exploró estructuras más complejas y una propuesta conceptual mucho más ambiciosa.",
+      "disco": "III Sides to Every Story (1992)",
+      "imagenDisco": "/extreme/3sidestoeverystory.jpg",
+      "fechaEfemeride": "22-09"
+    },
+    {
+      "etapa": "1995 - Cambio y Oscuridad",
+      "detalle": "Waiting for the Punchline mostró un sonido más alternativo y menos ligado al glam metal tradicional.",
+      "disco": "Waiting for the Punchline (1995)",
+      "imagenDisco": "/extreme/waitingforthepunchline.jpg",
+      "fechaEfemeride": "07-02"
+    },
+    {
+      "etapa": "2008 - El Regreso Esperado",
+      "detalle": "Tras años separados, Extreme regresó manteniendo intacta su calidad musical y energía característica.",
+      "disco": "Saudades de Rock (2008)",
+      "imagenDisco": "/extreme/saudadesderock.jpg",
+      "fechaEfemeride": "12-08"
+    },
+    {
+      "etapa": "2023 - Virtuosismo Moderno",
+      "detalle": "Décadas después de su debut, la banda volvió con un sonido potente y contemporáneo reafirmando su legado.",
+      "disco": "Six (2023)",
+      "imagenDisco": "/extreme/six.jpg",
+      "fechaEfemeride": "09-06"
+    }
+  ]
+}
+
 
 
 ]
