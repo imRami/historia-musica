@@ -260,7 +260,7 @@
 }
     ]
   },
-   {
+  {
     "slug": "charly-garcia",
     "nombre": "Charly García",
     "tipo":"Solista",
@@ -496,6 +496,255 @@
       "fechaEfemeride": "10-06"
     }
   ]
-}
+  },
+  {
+  "slug": "ariana-grande",
+  "nombre": "Ariana Grande",
+  "pais": "Estados Unidos",
+  "genero": "Pop",
+  "subgenero": "Pop / R&B / Dance Pop / Trap Pop",
+  "periodo": "2011 - Presente",
+  "imagen": "/ariana/ariana-logo.jpg",
+  "resumen": "Una de las artistas pop más influyentes del siglo XXI, reconocida por su poderosa voz, récords globales y evolución musical constante.",
+  "historiaLarga": "Antes de convertirse en una superestrella mundial del pop, Ariana Grande comenzó su carrera artística en el teatro musical y la televisión. Nacida en Florida, Estados Unidos, Ariana participó desde muy joven en obras teatrales y programas infantiles, destacándose rápidamente por su capacidad vocal.\nSu gran salto a la fama llegó gracias a la serie Victorious de Nickelodeon, donde interpretó a Cat Valentine. Mientras crecía su popularidad televisiva, Ariana comenzó a publicar covers musicales en internet, llamando la atención de productores y sellos discográficos.\nEn 2011 firmó con Republic Records y comenzó a trabajar en su carrera musical. Inspirada por artistas como Mariah Carey y Whitney Houston, Ariana apostó por una mezcla de pop moderno y R&B.\nEl 30 de agosto de 2013 lanzó su álbum debut Yours Truly, iniciando una carrera que la convertiría en una de las artistas más exitosas y escuchadas del mundo.",
+  "trayectoria": [
+    {
+      "etapa": "2013 - El Debut Vocal Explosivo",
+      "detalle": "Ariana debutó oficialmente en la música con una fuerte influencia del R&B noventero y comparaciones inmediatas con Mariah Carey gracias a su impresionante rango vocal.",
+      "disco": "Yours Truly (2013)",
+      "imagenDisco": "/ariana/yourstruly.jpg",
+      "fechaEfemeride": "30-08"
+    },
+    {
+      "etapa": "2014 - Consolidación Pop",
+      "detalle": "Con un sonido más pop y colaboraciones exitosas, Ariana comenzó a dominar los rankings internacionales con éxitos como “Problem”.",
+      "disco": "My Everything (2014)",
+      "imagenDisco": "/ariana/myeverything.jpg",
+      "fechaEfemeride": "25-08"
+    },
+    {
+      "etapa": "2016 - Oscuridad y Madurez",
+      "detalle": "Ariana mostró una imagen más adulta y experimental incorporando sonidos electrónicos y letras más personales.",
+      "disco": "Dangerous Woman (2016)",
+      "imagenDisco": "/ariana/dangerouswoman.jpg",
+      "fechaEfemeride": "20-05"
+    },
+    {
+      "etapa": "2018 - Dolor y Renacimiento",
+      "detalle": "Tras momentos personales difíciles, Ariana lanzó uno de sus discos más emocionales y exitosos, explorando vulnerabilidad y fortaleza emocional.",
+      "disco": "Sweetener (2018)",
+      "imagenDisco": "/ariana/sweetener.jpg",
+      "fechaEfemeride": "17-08"
+    },
+    {
+      "etapa": "2019 - Honestidad y Superación",
+      "detalle": "Con letras íntimas y una estética más directa, Ariana convirtió experiencias personales en himnos globales de superación y amor propio.",
+      "disco": "Thank U, Next (2019)",
+      "imagenDisco": "/ariana/thankunext.jpg",
+      "fechaEfemeride": "08-02"
+    },
+    {
+      "etapa": "2020 - Romance y Sensualidad",
+      "detalle": "Ariana exploró sonidos más suaves y atmosféricos en un álbum enfocado en relaciones, intimidad y emociones modernas.",
+      "disco": "Positions (2020)",
+      "imagenDisco": "/ariana/positions.jpg",
+      "fechaEfemeride": "30-10"
+    },
+    {
+      "etapa": "2024 - Reflexión y Vulnerabilidad",
+      "detalle": "Con una propuesta más emocional y conceptual, Ariana regresó explorando el amor, las pérdidas y la exposición pública.",
+      "disco": "Eternal Sunshine (2024)",
+      "imagenDisco": "/ariana/eternalsunshine.jpg",
+      "fechaEfemeride": "08-03"
+    }
+  ]
+  },
+  {
+  "slug": "latin-mafia",
+  "nombre": "Latin Mafia",
+  "pais": "México",
+  "genero": "Pop",
+  "subgenero": "Pop Alternativo / Indie Pop / R&B / Música Urbana",
+  "periodo": "2021 - Presente",
+  "imagen": "/latinmafia/latinmafia-logo.jpg",
+  "resumen": "Trío mexicano que revolucionó la escena alternativa latina mezclando emociones íntimas, producción moderna y una estética juvenil única.",
+  "historiaLarga": "Latin Mafia nació en México como un proyecto independiente formado por los hermanos Mike de la Rosa, Emilio de la Rosa y Milton de la Rosa. Desde sus comienzos, el grupo apostó por una propuesta distinta dentro de la música latina, mezclando sonidos alternativos, R&B, pop e influencias urbanas con letras emocionales y personales.\nGracias a redes sociales como TikTok y plataformas digitales, Latin Mafia comenzó a viralizar canciones y fragmentos musicales que rápidamente conectaron con una nueva generación de oyentes latinoamericanos.\nLa banda se destacó por una estética minimalista, producciones atmosféricas y una identidad visual moderna que los diferenció dentro de la escena alternativa.\nCon el paso del tiempo, el grupo se convirtió en una de las propuestas emergentes más importantes de la música latina contemporánea, acumulando millones de reproducciones y una base de fans cada vez más grande.",
+  "trayectoria": [
+    {
+      "etapa": "2021 - El Inicio Independiente",
+      "detalle": "Latin Mafia comenzó a publicar sus primeras canciones de manera independiente, construyendo rápidamente una identidad sonora emocional y moderna.",
+      "disco": "Primeros Sencillos (2021)",
+      "imagenDisco": "/latinmafia/primerossencillos.jpg",
+      "fechaEfemeride": "00-00"
+    },
+    {
+      "etapa": "2022 - Viralización en Redes",
+      "detalle": "El grupo ganó popularidad gracias a TikTok y plataformas digitales, conectando con miles de jóvenes por sus letras sensibles y sonidos alternativos.",
+      "disco": "Continuación de Sencillos (2022)",
+      "imagenDisco": "/latinmafia/sencillos2022.jpg",
+      "fechaEfemeride": "00-00"
+    },
+    {
+      "etapa": "2023 - Explosión Internacional",
+      "detalle": "Latin Mafia comenzó a consolidarse como una de las bandas emergentes más importantes de Latinoamérica, agotando shows y aumentando su impacto global.",
+      "disco": "Todos Los Días Todo El Día (2023)",
+      "imagenDisco": "/latinmafia/todolosdiastodoeldia.jpg",
+      "fechaEfemeride": "00-00"
+    },
+    {
+      "etapa": "2024 - Consolidación del Movimiento",
+      "detalle": "El grupo continuó expandiendo su propuesta artística con una estética más madura, colaboraciones importantes y millones de reproducciones globales.",
+      "disco": "Sigo Aquí (2024)",
+      "imagenDisco": "/latinmafia/sigoaqui.jpg",
+      "fechaEfemeride": "00-00"
+    }
+  ]
+  },
+  {
+  "slug": "deftones",
+  "nombre": "Deftones",
+  "pais": "Estados Unidos",
+  "genero": "Metal Alternativo",
+  "subgenero": "Nu Metal / Shoegaze / Alternative Metal / Experimental Rock",
+  "periodo": "1988 - Presente",
+  "imagen": "/deftones/deftones-logo.jpg",
+  "resumen": "Banda estadounidense reconocida por fusionar metal alternativo, atmósferas etéreas y experimentación sonora, convirtiéndose en una de las agrupaciones más influyentes del rock moderno.",
+  "historiaLarga": "Deftones nació a finales de los años 80 en Sacramento, California, cuando Chino Moreno, Stephen Carpenter y Abe Cunningham comenzaron a tocar juntos inspirados por el metal, el hardcore punk y el rock alternativo. Poco tiempo después se sumó Chi Cheng en el bajo, completando la formación clásica de la banda.\nDurante sus primeros años tocaron en pequeños clubes locales mientras desarrollaban un sonido agresivo pero atmosférico, diferente al resto de bandas pesadas de la época.\nGracias a demos independientes y una creciente reputación en vivo, Deftones llamó la atención de Maverick Records y firmó su primer contrato discográfico a comienzos de los años 90.\nEn 1995 lanzaron su álbum debut Adrenaline, iniciando una carrera marcada por la constante evolución musical y convirtiéndose en una de las bandas más importantes del metal alternativo.",
+  "trayectoria": [
+    {
+      "etapa": "1995 - El Debut Explosivo",
+      "detalle": "Con un sonido agresivo y crudo influenciado por el hardcore y el nu metal, Deftones debutó mostrando una energía intensa que rápidamente llamó la atención de la escena alternativa.",
+      "disco": "Adrenaline (1995)",
+      "imagenDisco": "/deftones/adrenaline.jpg",
+      "fechaEfemeride": "03-10"
+    },
+    {
+      "etapa": "1997 - La Consagración Alternativa",
+      "detalle": "El grupo alcanzó reconocimiento internacional gracias a un sonido más refinado y canciones icónicas como “My Own Summer (Shove It)” y “Be Quiet and Drive”.",
+      "disco": "Around the Fur (1997)",
+      "imagenDisco": "/deftones/aroundthefur.jpg",
+      "fechaEfemeride": "28-10"
+    },
+    {
+      "etapa": "2000 - La Obra Maestra Emocional",
+      "detalle": "Considerado uno de los discos más importantes del metal alternativo, White Pony mezcló agresividad, experimentación y atmósferas melancólicas.",
+      "disco": "White Pony (2000)",
+      "imagenDisco": "/deftones/whitepony.jpg",
+      "fechaEfemeride": "20-06"
+    },
+    {
+      "etapa": "2003 - Oscuridad y Madurez",
+      "detalle": "La banda exploró un sonido más oscuro y pesado, profundizando la carga emocional y experimental de sus composiciones.",
+      "disco": "Deftones (2003)",
+      "imagenDisco": "/deftones/deftones.jpg",
+      "fechaEfemeride": "20-05"
+    },
+    {
+      "etapa": "2006 - Caos y Melancolía",
+      "detalle": "Saturday Night Wrist reflejó tensiones internas dentro de la banda, combinando momentos agresivos con paisajes sonoros más etéreos.",
+      "disco": "Saturday Night Wrist (2006)",
+      "imagenDisco": "/deftones/saturdaynightwrist.jpg",
+      "fechaEfemeride": "31-10"
+    },
+    {
+      "etapa": "2010 - Renacimiento Tras la Tragedia",
+      "detalle": "Luego del accidente de Chi Cheng, la banda regresó con un álbum emocionalmente intenso que marcó una nueva etapa creativa.",
+      "disco": "Diamond Eyes (2010)",
+      "imagenDisco": "/deftones/diamondeyes.jpg",
+      "fechaEfemeride": "04-05"
+    },
+    {
+      "etapa": "2012 - Sonido Atmosférico y Experimental",
+      "detalle": "Koi No Yokan profundizó la mezcla entre pesadez y belleza melódica, consolidando la madurez artística del grupo.",
+      "disco": "Koi No Yokan (2012)",
+      "imagenDisco": "/deftones/koinoyokan.jpg",
+      "fechaEfemeride": "12-11"
+    },
+    {
+      "etapa": "2016 - Intensidad y Evolución",
+      "detalle": "La banda continuó explorando texturas más complejas y emocionales mientras mantenía la agresividad característica de su sonido.",
+      "disco": "Gore (2016)",
+      "imagenDisco": "/deftones/gore.jpg",
+      "fechaEfemeride": "08-04"
+    },
+    {
+      "etapa": "2020 - El Regreso en Pandemia",
+      "detalle": "Con un sonido más atmosférico y nostálgico, Ohms fue recibido como uno de los regresos más sólidos de la banda en años.",
+      "disco": "Ohms (2020)",
+      "imagenDisco": "/deftones/ohms.jpg",
+      "fechaEfemeride": "25-09"
+    }
+  ]
+  },
+  {
+  "slug": "mon-laferte",
+  "nombre": "Mon Laferte",
+  "pais": "Chile",
+  "genero": "Pop",
+  "subgenero": "Rock Alternativo / Bolero / Pop Latino / Indie / Ranchera",
+  "periodo": "2003 - Presente",
+  "imagen": "/monlaferte/monlaferte-logo.jpg",
+  "resumen": "Cantautora chilena reconocida por fusionar géneros latinoamericanos con una enorme carga emocional, convirtiéndose en una de las voces más influyentes de la música hispana actual.",
+  "historiaLarga": "Mon Laferte comenzó su carrera musical en Chile desde muy joven, participando en programas de televisión y pequeños escenarios locales. Nacida como Norma Monserrat Bustamante Laferte, rápidamente destacó por su poderosa voz y sensibilidad artística.\nDurante sus primeros años lanzó música bajo el nombre Monserrat Bustamante, pero tras mudarse a México inició una profunda reinvención artística y personal. Allí adoptó el nombre Mon Laferte y comenzó a desarrollar un estilo propio mezclando rock, bolero, pop, ranchera y sonidos latinoamericanos tradicionales.\nAunque atravesó años difíciles económicamente y problemas de salud, Mon continuó componiendo y presentándose en pequeños bares hasta construir una base sólida de seguidores.\nCon el lanzamiento de discos como Mon Laferte Vol.1 y canciones como “Tu Falta de Querer”, la artista alcanzó reconocimiento internacional y se convirtió en una de las figuras más importantes de la música latina contemporánea.",
+  "trayectoria": [
+    {
+      "etapa": "2003 - El Comienzo Televisivo",
+      "detalle": "Mon inició su carrera musical tras ganar popularidad en un programa de talentos chileno, mostrando desde temprano una voz poderosa y versátil.",
+      "disco": "La Chica de Rojo (2003)",
+      "imagenDisco": "/monlaferte/lachicaderojo.jpg",
+      "fechaEfemeride": "00-00"
+    },
+    {
+      "etapa": "2007 - Reinicio y Búsqueda Personal",
+      "detalle": "Tras mudarse a México, Mon comenzó una nueva etapa artística explorando sonidos más alternativos y emocionales.",
+      "disco": "Desechable (2007)",
+      "imagenDisco": "/monlaferte/desechable.jpg",
+      "fechaEfemeride": "00-00"
+    },
+    {
+      "etapa": "2011 - Renacimiento Artístico",
+      "detalle": "Con un sonido más íntimo y experimental, Mon empezó a construir la identidad musical que la haría reconocida internacionalmente.",
+      "disco": "Tornasol (2011)",
+      "imagenDisco": "/monlaferte/tornasol.jpg",
+      "fechaEfemeride": "00-00"
+    },
+    {
+      "etapa": "2015 - Explosión Emocional",
+      "detalle": "El álbum que cambió su carrera. Canciones como “Tu Falta de Querer” la transformaron en una de las nuevas voces más importantes de Latinoamérica.",
+      "disco": "Mon Laferte Vol.1 (2015)",
+      "imagenDisco": "/monlaferte/monlafertevol1.jpg",
+      "fechaEfemeride": "31-01"
+    },
+    {
+      "etapa": "2017 - Consagración Latina",
+      "detalle": "Mon profundizó la mezcla entre bolero, rock y música romántica mientras consolidaba su éxito internacional.",
+      "disco": "La Trenza (2017)",
+      "imagenDisco": "/monlaferte/latrenza.jpg",
+      "fechaEfemeride": "28-04"
+    },
+    {
+      "etapa": "2018 - Oscuridad y Sensibilidad",
+      "detalle": "La artista exploró emociones más profundas y una estética más melancólica inspirada en el desamor y la vulnerabilidad.",
+      "disco": "Norma (2018)",
+      "imagenDisco": "/monlaferte/norma.jpg",
+      "fechaEfemeride": "09-11"
+    },
+    {
+      "etapa": "2021 - Intimidad y Experimentación",
+      "detalle": "Con una propuesta más introspectiva y artística, Mon exploró sonidos acústicos y reflexiones personales sobre maternidad y vida.",
+      "disco": "Seis (2021)",
+      "imagenDisco": "/monlaferte/seis.jpg",
+      "fechaEfemeride": "08-04"
+    },
+    {
+      "etapa": "2023 - Libertad Creativa Total",
+      "detalle": "Mon presentó una obra más conceptual y diversa, mezclando distintos géneros latinoamericanos con una producción moderna.",
+      "disco": "Autopoiética (2023)",
+      "imagenDisco": "/monlaferte/autopoietica.jpg",
+      "fechaEfemeride": "10-11"
+    }
+  ]
+  }
+
 
 ]
