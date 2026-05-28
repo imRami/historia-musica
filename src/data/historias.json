@@ -147,8 +147,8 @@
     "nombre": "Pink Floyd",
     "pais": "Reino Unido",
     "genero": "Rock",
-    "subgenero": "Rock Psicodélico / Progresivo",
-    "periodo": "1965 - 1995",
+    "subgenero": "Rock Psicodélico / Rock Progresivo / Rock Experimental / Rock Sinfonico ",
+    "periodo": "1965 - 1994",
     "imagen": "/pinkfloyd/pinkfloydlogo.jpg",
     "resumen": "Íconos de la música del siglo XXI, famosos por sus composiciones filosóficas y experimentos sonoros.",
     "historiaLarga": "A mediados de los años 60, en Londres, varios estudiantes apasionados por la música comenzaron a experimentar con nuevos sonidos dentro de la escena underground británica. Roger Waters, Nick Mason y Richard Wright se conocieron mientras estudiaban arquitectura y formaron distintas bandas amateur hasta encontrar un rumbo propio.\nPoco tiempo después se sumó Syd Barrett, amigo de Waters desde Cambridge. Barrett aportó creatividad, letras surrealistas y un estilo psicodélico que transformó completamente la identidad del grupo. Fue él quien creó el nombre Pink Floyd, inspirado en dos músicos de blues: Pink Anderson y Floyd Council.\nLa banda comenzó a hacerse conocida en clubes underground de Londres gracias a sus shows experimentales llenos de luces, improvisaciones y sonidos espaciales. El grupo rápidamente llamó la atención de EMI y en 1967 ingresó a Abbey Road Studios para grabar su primer álbum.\nEl 5 de agosto de 1967 lanzaron The Piper at the Gates of Dawn, un disco revolucionario para la época y considerado una de las obras más importantes del rock psicodélico. Con canciones como “Astronomy Domine” e “Interstellar Overdrive”, Pink Floyd inició el camino hacia convertirse en una de las bandas más influyentes de la historia del rock.",
@@ -385,6 +385,117 @@
   "fechaEfemeride": "11-09"
 }
     ]
-  }
+  },
+  {
+  "slug": "bts",
+  "nombre": "BTS",
+  "pais": "Corea del Sur",
+  "genero": "K-Pop",
+  "subgenero": "Hip Hop / Pop / EDM / R&B / Dance Pop",
+  "periodo": "2013 - Presente",
+  "imagen": "/bts/btslogo.jpg",
+  "resumen": "Fenómeno global del K-Pop que revolucionó la música moderna mezclando pop, hip hop y mensajes sobre juventud, salud mental y amor propio.",
+  "historiaLarga": "A comienzos de la década de 2010, la compañía Big Hit Entertainment comenzó a formar un nuevo grupo masculino inspirado en el hip hop y la cultura juvenil. Kim Nam-joon, conocido como RM, fue uno de los primeros integrantes confirmados y rápidamente se convirtió en el líder del proyecto.\nCon el tiempo se sumaron Jin, Suga, J-Hope, Jimin, V y Jungkook, formando oficialmente BTS. El grupo debutó en un momento donde el K-Pop comenzaba a expandirse internacionalmente, pero BTS destacó por escribir canciones con mensajes personales y sociales sobre la presión juvenil, la autoestima y los sueños.\nEl 13 de junio de 2013 lanzaron su primer sencillo y poco después publicaron su álbum debut 2 Cool 4 Skool. Aunque comenzaron como una banda pequeña dentro de la industria coreana, el grupo rápidamente construyó una base de fans global llamada ARMY.\nCon el paso de los años, BTS rompió récords internacionales, lideró rankings mundiales y se convirtió en uno de los fenómenos musicales más importantes del siglo XXI.",
+  "trayectoria": [
+    {
+      "etapa": "2013 - El Inicio del Sueño",
+      "detalle": "BTS debutó oficialmente con un sonido hip hop agresivo y letras enfocadas en las presiones de la juventud coreana. El grupo comenzó a construir una identidad diferente dentro del K-Pop.",
+      "disco": "2 Cool 4 Skool (2013)",
+      "imagenDisco": "/bts/2cool4skool.jpg",
+      "fechaEfemeride": "12-06"
+    },
+    {
+      "etapa": "2013 - Juventud y Rebeldía",
+      "detalle": "Con un estilo más energético y urbano, BTS continuó explorando las problemáticas adolescentes y consolidó sus primeras bases de fans.",
+      "disco": "O!RUL8,2? (2013)",
+      "imagenDisco": "/bts/orul82.jpg",
+      "fechaEfemeride": "11-09"
+    },
+    {
+      "etapa": "2014 - Expansión del Universo BTS",
+      "detalle": "El grupo comenzó a ganar popularidad con un sonido más melódico y emocional mientras expandía su narrativa juvenil.",
+      "disco": "Skool Luv Affair (2014)",
+      "imagenDisco": "/bts/skoolluvaffair.jpg",
+      "fechaEfemeride": "12-02"
+    },
+    {
+      "etapa": "2014 - Primer Éxito Internacional",
+      "detalle": "BTS empezó a captar atención fuera de Corea del Sur gracias a una imagen más madura y producciones más ambiciosas.",
+      "disco": "Dark & Wild (2014)",
+      "imagenDisco": "/bts/darkandwild.jpg",
+      "fechaEfemeride": "19-08"
+    },
+    {
+      "etapa": "2015 - El Comienzo de la Era HYYH",
+      "detalle": "Con letras más profundas y emocionales, BTS inició una de las etapas más importantes de su carrera hablando sobre crecimiento, dolor y juventud.",
+      "disco": "The Most Beautiful Moment in Life Pt.1 (2015)",
+      "imagenDisco": "/bts/hyyhpt1.jpg",
+      "fechaEfemeride": "29-04"
+    },
+    {
+      "etapa": "2015 - Consagración Mundial",
+      "detalle": "La segunda parte de la saga HYYH consolidó a BTS como uno de los grupos más influyentes del K-Pop moderno.",
+      "disco": "The Most Beautiful Moment in Life Pt.2 (2015)",
+      "imagenDisco": "/bts/hyyhpt2.jpg",
+      "fechaEfemeride": "30-11"
+    },
+    {
+      "etapa": "2016 - Arte y Psicología",
+      "detalle": "Inspirado en la novela Demian de Hermann Hesse, el álbum mostró una evolución artística más oscura y sofisticada.",
+      "disco": "Wings (2016)",
+      "imagenDisco": "/bts/wings.jpg",
+      "fechaEfemeride": "10-10"
+    },
+    {
+      "etapa": "2017 - El Salto Global",
+      "detalle": "La reedición de Wings impulsó aún más la popularidad internacional del grupo y abrió las puertas del mercado estadounidense.",
+      "disco": "You Never Walk Alone (2017)",
+      "imagenDisco": "/bts/youneverwalkalone.jpg",
+      "fechaEfemeride": "13-02"
+    },
+    {
+      "etapa": "2018 - Amor Propio y Éxito Mundial",
+      "detalle": "BTS alcanzó el estrellato global con un mensaje centrado en la autoestima y el amor propio, liderando rankings internacionales.",
+      "disco": "Love Yourself: Tear (2018)",
+      "imagenDisco": "/bts/loveyourselftear.jpg",
+      "fechaEfemeride": "18-05"
+    },
+    {
+      "etapa": "2018 - La Consolidación del Fenómeno",
+      "detalle": "El cierre de la era Love Yourself mostró a BTS como un fenómeno cultural global con millones de seguidores alrededor del mundo.",
+      "disco": "Love Yourself: Answer (2018)",
+      "imagenDisco": "/bts/loveyourselfanswer.jpg",
+      "fechaEfemeride": "24-08"
+    },
+    {
+      "etapa": "2019 - Reflexión y Madurez",
+      "detalle": "El grupo exploró temas filosóficos y emocionales inspirados en Carl Jung mientras continuaba dominando la escena pop mundial.",
+      "disco": "Map of the Soul: Persona (2019)",
+      "imagenDisco": "/bts/mapofthesoulpersona.jpg",
+      "fechaEfemeride": "12-04"
+    },
+    {
+      "etapa": "2020 - Dominación Global",
+      "detalle": "Con un sonido más pop y optimista, BTS rompió récords internacionales y alcanzó el número uno en múltiples países.",
+      "disco": "Map of the Soul: 7 (2020)",
+      "imagenDisco": "/bts/mapofthesoul7.jpg",
+      "fechaEfemeride": "21-02"
+    },
+    {
+      "etapa": "2020 - Música en Pandemia",
+      "detalle": "Durante el aislamiento mundial, BTS lanzó un álbum introspectivo y emocional creado para acompañar a sus fans en tiempos difíciles.",
+      "disco": "BE (2020)",
+      "imagenDisco": "/bts/be.jpg",
+      "fechaEfemeride": "20-11"
+    },
+    {
+      "etapa": "2022 - Antología y Legado",
+      "detalle": "El grupo celebró su trayectoria con una recopilación especial que repasó sus mayores éxitos y nuevas canciones inéditas.",
+      "disco": "Proof (2022)",
+      "imagenDisco": "/bts/proof.jpg",
+      "fechaEfemeride": "10-06"
+    }
+  ]
+}
 
 ]
