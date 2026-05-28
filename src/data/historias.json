@@ -149,14 +149,14 @@
     "genero": "Rock",
     "subgenero": "Rock Psicodélico / Progresivo",
     "periodo": "1965 - 1995",
-    "imagen": "/pinkfloyd.jpg",
+    "imagen": "/pinkfloyd/pinkfloydlogo.jpg",
     "resumen": "Íconos de la música del siglo XXI, famosos por sus composiciones filosóficas y experimentos sonoros.",
     "trayectoria": [
       {
         "etapa": "1973 - El Prisma Revolucionario",
         "detalle": "Lanzan 'The Dark Side of the Moon', una obra cumbre de la ingeniería de sonido y el rock conceptual que explora la locura, el tiempo y la muerte.",
         "disco": "The Dark Side of the Moon (1973)",
-        "imagenDisco": "/pinkfloyd.jpg",
+        "imagenDisco": "/pinkfloyd/pinkfloyd.jpg",
         "fechaEfemeride": "27-05"
       }
     ]
