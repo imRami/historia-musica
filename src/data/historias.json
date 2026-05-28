@@ -173,13 +173,118 @@
     "resumen": "El genio absoluto del rock en español, pilar de Sui Generis, Serú Girán y una carrera solista revolucionaria.",
     "historiaLarga":"Hablar de Charly García es hablar de una de las figuras más revolucionarias de la música latinoamericana. Pianista prodigio, compositor brillante y símbolo absoluto del rock nacional, su carrera atravesó más de cinco décadas de transformaciones artísticas, escándalos, himnos generacionales y una creatividad que redefinió el sonido de toda una época. \nMucho antes de convertirse en leyenda, Charly García era simplemente Carlos Alberto García Moreno, un niño nacido el 23 de octubre de 1951 en Buenos Aires. Desde muy pequeño mostró capacidades musicales extraordinarias. A los tres años ya tenía un oído absoluto sorprendente y, poco después, comenzó estudios formales de piano clásico. A los doce años obtuvo el título de profesor de piano, algo absolutamente inusual para alguien de su edad. \nSin embargo, el joven Charly no estaba interesado únicamente en Mozart o Chopin. A finales de los años 60 quedó fascinado con el fenómeno de The Beatles y el naciente rock internacional. Aquella mezcla entre formación académica y rebeldía juvenil terminaría convirtiéndose en la base de su estilo único.",
     "trayectoria": [
-      {
-        "etapa": "1983 - Modernidad Neoyorquina",
-        "detalle": "Graba en Nueva York 'Clics Modernos', introduciendo cajas de ritmos y sintetizadores avanzados, cambiando la sonoridad de toda la música latina.",
-        "disco": "Clics Modernos (1983)",
-        "imagenDisco": "/clics-modernos.jpg",
-        "fechaEfemeride": "29-05"
-      }
+{
+  "etapa": "1982 - El Despertar Solista",
+  "detalle": "Primer gran álbum solista tras la separación de Serú Girán. Charly retrata el clima tenso de la dictadura y la Guerra de Malvinas con canciones como “No Bombardeen Buenos Aires” e “Inconsciente Colectivo”, iniciando una nueva etapa artística.",
+  "disco": "Yendo de la Cama al Living (1982)",
+  "imagenDisco": "/yendo-de-la-cama-al-living.jpg",
+  "fechaEfemeride": "01-08"
+},
+{
+  "etapa": "1983 - Modernidad Neoyorquina",
+  "detalle": "Grabado en Nueva York junto al productor Joe Blaney, el disco incorporó sonidos new wave y funk modernos que revolucionaron el rock argentino. Es considerado una de las obras maestras de Charly García.",
+  "disco": "Clics Modernos (1983)",
+  "imagenDisco": "/clics-modernos.jpg",
+  "fechaEfemeride": "05-11"
+},
+{
+  "etapa": "1984 - Noches de Rock y Descontrol",
+  "detalle": "Con un sonido más crudo y urbano, Charly lanzó uno de los discos más emblemáticos del rock nacional. Incluye clásicos como “Demoliendo Hoteles” y “Promesas Sobre el Bidet”.",
+  "disco": "Piano Bar (1984)",
+  "imagenDisco": "/piano-bar.jpg",
+  "fechaEfemeride": "05-09"
+},
+{
+  "etapa": "1986 - Espiritualidad y Rebeldía",
+  "detalle": "Charly profundizó un sonido más sofisticado y personal, mezclando rock, sintetizadores y letras introspectivas. El álbum incluye himnos como “No Voy en Tren”.",
+  "disco": "Parte de la Religión (1986)",
+  "imagenDisco": "/parte-de-la-religion.jpg",
+  "fechaEfemeride": "24-10"
+},
+{
+  "etapa": "1987 - Pop Irónico y Experimental",
+  "detalle": "Un disco cargado de humor, ironía y experimentación pop. Charly exploró sonidos más livianos y colaboraciones con músicos cercanos de la escena argentina.",
+  "disco": "Cómo Conseguir Chicas (1987)",
+  "imagenDisco": "/como-conseguir-chicas.jpg",
+  "fechaEfemeride": "26-10"
+},
+{
+  "etapa": "1989 - Crítica Social y Caos Creativo",
+  "detalle": "Mezclando sensibilidad social y espíritu rockero, el disco incluye canciones fundamentales como “Fanky” y una histórica versión del Himno Nacional Argentino.",
+  "disco": "Filosofía Barata y Zapatos de Goma (1989)",
+  "imagenDisco": "/filosofia-barata-y-zapatos-de-goma.jpg",
+  "fechaEfemeride": "27-11"
+},
+{
+  "etapa": "1991 - La Unión de Dos Genios",
+  "detalle": "El encuentro musical entre Charly García y Pedro Aznar dio origen a un disco elegante y melancólico, recordado especialmente por “Tu Amor”.",
+  "disco": "Tango 4 (1991)",
+  "imagenDisco": "/tango-4.jpg",
+  "fechaEfemeride": "14-02"
+},
+{
+  "etapa": "1994 - Oscuridad y Ópera Rock",
+  "detalle": "Una de las obras más ambiciosas y complejas de Charly. Concebida como una ópera rock moderna, el disco exploró climas oscuros y experimentales.",
+  "disco": "La Hija de la Lágrima (1994)",
+  "imagenDisco": "/la-hija-de-la-lagrima.jpg",
+  "fechaEfemeride": "23-09"
+},
+{
+  "etapa": "1995 - Improvisación y Psicodelia",
+  "detalle": "Grabado con una fuerte impronta improvisada y experimental, el álbum refleja una etapa caótica pero creativamente intensa del músico.",
+  "disco": "Estaba en Llamas Cuando Me Acosté (1995)",
+  "imagenDisco": "/estaba-en-llamas-cuando-me-acoste.jpg",
+  "fechaEfemeride": "17-11"
+},
+{
+  "etapa": "1996 - El Inicio del Caos Total",
+  "detalle": "Más que un disco, fue el nacimiento del concepto “Say No More”, una filosofía artística marcada por el caos, la distorsión y la ruptura de estructuras tradicionales.",
+  "disco": "Say No More (1996)",
+  "imagenDisco": "/say-no-more.jpg",
+  "fechaEfemeride": "17-10"
+},
+{
+  "etapa": "1999 - Resistencia y Rock Crudo",
+  "detalle": "Con un sonido más directo y agresivo, Charly lanzó un disco cargado de crítica social y energía rockera en plena etapa “Say No More”.",
+  "disco": "El Aguante (1999)",
+  "imagenDisco": "/el-aguante.jpg",
+  "fechaEfemeride": "29-07"
+},
+{
+  "etapa": "2002 - Renacimiento Musical",
+  "detalle": "Considerado un regreso artístico importante, el álbum mostró a un Charly más enfocado y melódico, incorporando nuevas versiones de clásicos y sonidos modernos.",
+  "disco": "Influencia (2002)",
+  "imagenDisco": "/influencia.jpg",
+  "fechaEfemeride": "16-10"
+},
+{
+  "etapa": "2003 - Actitud y Provocación",
+  "detalle": "Continuando la energía de “Influencia”, Charly apostó por un sonido más eléctrico y provocador, reafirmando su figura como símbolo del rock argentino.",
+  "disco": "Rock and Roll YO (2003)",
+  "imagenDisco": "/rock-and-roll-yo.jpg",
+  "fechaEfemeride": "23-09"
+},
+{
+  "etapa": "2010 - El Disco Perdido Finalmente Liberado",
+  "detalle": "Después de años de filtraciones, rumores y retrasos, el álbum finalmente vio la luz. Grabado en Nueva York, refleja una etapa experimental y caótica de Charly.",
+  "disco": "Kill Gil (2010)",
+  "imagenDisco": "/kill-gil.jpg",
+  "fechaEfemeride": "22-12"
+},
+{
+  "etapa": "2017 - El Regreso del Maestro",
+  "detalle": "Tras varios años de bajo perfil, Charly regresó con un disco más ordenado y luminoso, recuperando parte de su esencia clásica y recibiendo elogios de la crítica.",
+  "disco": "Random (2017)",
+  "imagenDisco": "/random.jpg",
+  "fechaEfemeride": "23-02"
+},
+{
+  "etapa": "2024 - Reflexión, Legado y Eternidad",
+  "detalle": "Su esperado regreso discográfico mezcla nuevas composiciones, invitados históricos y reinterpretaciones sonoras que funcionan como una mirada retrospectiva sobre toda su carrera.",
+  "disco": "La Lógica del Escorpión (2024)",
+  "imagenDisco": "/la-logica-del-escorpion.jpg",
+  "fechaEfemeride": "11-09"
+}
     ]
   }
 

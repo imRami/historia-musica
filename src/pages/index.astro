@@ -1,7 +1,7 @@
 ---
 import historias from '../data/historias.json';
 
-// Lista de países sin repetir
+// Lista de países sin repetir para los botones
 const paises = [...new Set(historias.map(item => item.pais))];
 ---
 
@@ -12,8 +12,10 @@ const paises = [...new Set(historias.map(item => item.pais))];
 	</head>
 	<body class="bg-zinc-950 text-zinc-100 min-h-screen font-sans relative overflow-x-hidden selection:bg-purple-500 selection:text-white">
 		
+		<!-- 🌌 Luces de Fondo (Efecto Neón Blur) -->
 		<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] pointer-events-none opacity-20 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-purple-600 via-transparent to-transparent -z-10"></div>
 
+		<!-- 🎸 Barra de Navegación -->
 		<header class="border-b border-zinc-900/80 bg-zinc-950/70 backdrop-blur-md sticky top-0 z-50">
 			<div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
 				<div class="flex items-center gap-3">
@@ -25,26 +27,75 @@ const paises = [...new Set(historias.map(item => item.pais))];
 
 		<main class="max-w-5xl mx-auto px-6 py-16">
 			
-			<section class="grid md:grid-cols-5 gap-12 items-center mb-20">
+			<!-- 🖼️ Sección Héroe con Buscador Predictivo Visual y Portada Aleatoria -->
+			<section class="grid md:grid-cols-5 gap-12 items-center mb-16">
+				<!-- Textos principales y Buscador -->
 				<div class="md:col-span-3 text-left">
-					<span class="text-[10px] font-mono tracking-widest text-purple-400 uppercase bg-purple-950/40 border border-purple-800/60 px-3 py-1 rounded-full px-4 py-1.5">
+					<span class="text-[10px] font-mono tracking-widest text-purple-400 uppercase bg-purple-950/40 border border-purple-800/60 px-4 py-1.5 rounded-full">
 						🎛️ Enciclopedia Interactiva de Sonido
 					</span>
 					<h2 class="text-4xl md:text-6xl font-black tracking-tighter mt-6 mb-4 leading-none bg-gradient-to-b from-white via-zinc-200 to-zinc-500 bg-clip-text text-transparent">
 						Viajá a través de las décadas.
 					</h2>
-					<p class="text-zinc-400 text-base max-w-lg leading-relaxed mb-8">
-						Explorá los géneros, subgéneros e hitos históricos de las bandas más influyentes del mundo. Un mapa cronológico diseñado para verdaderos melómanos.
+					<p class="text-zinc-400 text-sm max-w-lg leading-relaxed mb-8">
+						Explorá los géneros, subgéneros e hitos históricos de las bandas más influyentes del mundo.
 					</p>
+
+					<!-- 🔍 Contenedor de la Barra de Búsqueda Avanzada -->
+					<div class="relative max-w-md z-40">
+						<div class="flex items-center gap-3 bg-zinc-900/80 border border-zinc-800 focus-within:border-purple-500 p-3 rounded-2xl shadow-2xl transition duration-300 backdrop-blur-sm">
+							<span class="text-zinc-500 text-lg pl-1">🔍</span>
+							<input 
+								type="text" 
+								id="buscador-input"
+								placeholder="Buscar banda, género, país..." 
+								class="w-full bg-transparent text-sm text-white focus:outline-none placeholder:text-zinc-600 font-medium"
+								autocomplete="off"
+							/>
+						</div>
+
+						<!-- 👁️ Menú Desplegable de Resultados Visuales con Foto -->
+						<div 
+							id="buscador-resultados" 
+							class="absolute top-full left-0 w-full mt-2 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-2xl overflow-hidden hidden flex flex-col max-h-60 overflow-y-auto backdrop-blur-lg z-50"
+						>
+							<!-- Los resultados se inyectan acá por JavaScript -->
+						</div>
+					</div>
 				</div>
 
-				<div class="md:col-span-2 relative group w-full aspect-[4/3] md:aspect-square bg-gradient-to-br from-zinc-900 to-zinc-900/40 border border-zinc-800 rounded-3xl overflow-hidden flex flex-col items-center justify-center shadow-2xl p-6">
-					<div class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f23_1px,transparent_1px),linear-gradient(to_bottom,#1f1f23_1px,transparent_1px)] bg-[size:24px_24px] opacity-30"></div>
-					<span class="text-5xl mb-4 group-hover:scale-110 transition duration-300">💿</span>
-					<p class="text-xs font-mono text-zinc-500 tracking-wider uppercase text-center">Espacio para tu Banner / Imagen de Portada</p>
+				<!-- 💿 Contenedor de Portada Aleatoria Inteligente -->
+				<div class="md:col-span-2 relative group w-full aspect-[4/3] md:aspect-square bg-zinc-900/40 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
+					<img 
+						id="imagen-random-portada" 
+						src="" 
+						alt="Portada Sónica" 
+						class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-700 hidden"
+					/>
+					<!-- Placeholder con emoji mientras elige la foto -->
+					<div id="placeholder-random-portada" class="flex flex-col items-center justify-center text-center p-6">
+						<span class="text-5xl mb-4 animate-pulse">💿</span>
+						<p class="text-xs font-mono text-zinc-500 uppercase tracking-wider">Cargando catálogo...</p>
+					</div>
+					<!-- Capa de degradado sutil -->
+					<div class="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent pointer-events-none"></div>
 				</div>
 			</section>
 
+			<!-- 📅 SECCIÓN: UN DÍA COMO HOY EN LA MÚSICA (Efemérides Múltiples) -->
+			<section id="seccion-efemeride" class="mb-12 hidden">
+				<div class="bg-gradient-to-r from-purple-950/40 via-zinc-900/50 to-zinc-900/20 border border-purple-900/50 rounded-2xl p-6 relative overflow-hidden shadow-xl shadow-purple-950/10">
+					<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-purple-500/10 rounded-full blur-2xl"></div>
+					<div class="flex items-center gap-2 text-purple-400 font-mono text-xs uppercase tracking-widest font-bold mb-4">
+						<span>📻</span> Un día como hoy en la música
+					</div>
+					<div id="efemeride-contenido">
+						<!-- Las efemérides del día se cargan acá -->
+					</div>
+				</div>
+			</section>
+
+			<!-- 🌍 Barra de Filtros por Botones de Países -->
 			<section class="bg-zinc-900/20 border border-zinc-900 rounded-2xl p-6 mb-12 backdrop-blur-sm">
 				<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
 					<div>
@@ -63,21 +114,17 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				</div>
 			</section>
 
+			<!-- 🎵 Grilla del Catálogo General de Bandas -->
 			<section>
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{historias.map((artista) => (
 						<a 
-							href={`/${artista.slug}`}
+							href={`/\${artista.slug}`}
 							data-target-pais={artista.pais} 
 							class="tarjeta-artista flex flex-col justify-between bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-900 hover:border-zinc-800/80 rounded-2xl transition-all duration-300 hover:-translate-y-1 relative group cursor-pointer overflow-hidden"
 						>
-							<!-- Contenedor de la Imagen con zoom en hover -->
 							<div class="w-full h-48 overflow-hidden relative">
-								<img 
-									src={artista.imagen} 
-									alt={artista.nombre} 
-									class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-								/>
+								<img src={artista.imagen} alt={artista.nombre} class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
 								<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
 							</div>
 
@@ -89,11 +136,9 @@ const paises = [...new Set(historias.map(item => item.pais))];
 										</span>
 										<span class="text-[10px] font-mono text-zinc-500 uppercase">{artista.pais}</span>
 									</div>
-									
 									<h3 class="text-2xl font-black mt-4 text-zinc-100 group-hover:text-purple-400 transition duration-300">
 										{artista.nombre}
 									</h3>
-									
 									<p class="text-zinc-400 text-xs mt-3 line-clamp-3 leading-relaxed">
 										{artista.resumen}
 									</p>
@@ -112,34 +157,135 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			</section>
 		</main>
 
-		<script>
+		<!-- 🧠 Lógicas de Programación Limpias de Filtros, Buscador y Efemérides -->
+		<script define:vars={{ historias }}>
+			// === 💿 LÓGICA DE PORTADA ALEATORIA ===
+			const imgPortada = document.getElementById('imagen-random-portada');
+			const placeholderPortada = document.getElementById('placeholder-random-portada');
+
+			const todasLasPortadas = historias.flatMap(artista => 
+				artista.trayectoria ? artista.trayectoria.filter(h => h.imagenDisco).map(h => h.imagenDisco) : []
+			);
+
+			if (todasLasPortadas.length > 0 && imgPortada && placeholderPortada) {
+				const portadaRandom = todasLasPortadas[Math.floor(Math.random() * todasLasPortadas.length)];
+				imgPortada.src = portadaRandom;
+				imgPortada.classList.remove('hidden');
+				placeholderPortada.classList.add('hidden');
+			}
+
+			// === 📅 LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
+			const seccionEfemeride = document.getElementById('seccion-efemeride');
+			const efemerideContenido = document.getElementById('efemeride-contenido');
+
+			const hoy = new Date();
+			const dia = String(hoy.getDate()).padStart(2, '0');
+			const mes = String(hoy.getMonth() + 1).padStart(2, '0');
+			const fechaHoyTexto = `\({dia}-\){mes}`;
+
+			let efemeridesDelDia = [];
+
+			for (const artista of historias) {
+				if (artista.trayectoria) {
+					const coincidencias = artista.trayectoria.filter(h => h.fechaEfemeride === fechaHoyTexto);
+					coincidencias.forEach(hito => {
+						efemeridesDelDia.push({ hito, artista });
+					});
+				}
+			}
+
+			if (efemeridesDelDia.length > 0) {
+				seccionEfemeride.classList.remove('hidden');
+				efemerideContenido.innerHTML = efemeridesDelDia.map(({ hito, artista }, indice) => `
+					<div class="flex flex-col md:flex-row gap-6 items-start md:items-center \${indice > 0 ? 'border-t border-purple-900/40 pt-6 mt-6' : ''}">
+						<div class="flex-1">
+							<span class="text-[10px] font-mono font-bold text-purple-400 bg-purple-950/60 border border-purple-900/50 px-2 py-0.5 rounded uppercase">
+								\${artista.nombre}
+							</span>
+							<h4 class="text-2xl font-black text-white tracking-tight mt-2">\${hito.etapa}</h4>
+							<p class="text-zinc-300 text-sm mt-2 leading-relaxed max-w-2xl">\${hito.detalle}</p>
+
+							Ver biografía completa →
+
+							${hito.imagenDisco ? <div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden 
+							border border-zinc-800 shadow-md"> <img src="\({hito.imagenDisco}" alt="\)
+							{hito.disco}" class="w-full h-full object-cover" /> </div> : ''}
+
+							`).join('');
+						}
+
+						// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO VISUAL ===
+						const input = document.getElementById('buscador-input');
+						const resultadosContenedor = document.getElementById('buscador-resultados');
+
+						if (input && resultadosContenedor) {
+							input.addEventListener('input', (e) => {
+								const valor = e.target.value.toLowerCase().trim();
+								if (valor === '') {
+								resultadosContenedor.classList.add('hidden');
+								resultadosContenedor.innerHTML = '';
+								return;
+							}
+
+							const filtrados = historias.filter(artista =>
+							artista.nombre.toLowerCase().includes(valor) ||
+							artista.genero.toLowerCase().includes(valor) ||
+							artista.subgenero.toLowerCase().includes(valor) ||
+							artista.pais.toLowerCase().includes(valor)
+						);
+
+						if (filtrados.length > 0) {
+						resultadosContenedor.classList.remove('hidden');
+						resultadosContenedor.innerHTML = filtrados.map(artista => <a href="/${artista.slug}" 
+						class="flex items-center gap-4 px-4 py-3 hover:bg-zinc-800/60 transition group 
+						border-b border-zinc-800/40 last:border-0"> <div class="w-10 h-10 rounded-full 
+						overflow-hidden shrink-0 border border-zinc-700"> <img src="${artista.imagen}" 
+						alt="${artista.nombre}" class="w-full h-full object-cover" /> </div> <div 
+						class="flex-1 text-left"> <h4 class="text-sm font-bold text-zinc-200 group-
+						hover:text-purple-400 transition">${artista.nombre}</h4> <p class="text-[10px] font-
+						mono text-zinc-500 mt-0.5">${artista.pais} • ${artista.subgenero}</p> </div> <span 
+						class="text-zinc-600 group-hover:text-purple-400 transition text-sm font-mono pr-
+						1">→</span> </a>).join('');
+					} else {
+						resultadosContenedor.classList.remove('hidden');
+						resultadosContenedor.innerHTML = <div class="px-4 py-4 text-
+						xs font-mono text-zinc-500 text-center">⚠️ No se encontraron artistas vinculados</div>;
+					}
+				});
+
+				document.addEventListener('click', (e) => {
+					if (!input.contains(e.target) && !resultadosContenedor.contains(e.target)) {
+						resultadosContenedor.classList.add('hidden');
+					}
+				});
+			}
+
+			// === 🌍 LÓGICA DE BOTONES DE FILTRO POR PAÍS ===
 			const botones = document.querySelectorAll('.btn-filtro');
 			const tarjetas = document.querySelectorAll('.tarjeta-artista');
 
 			botones.forEach(boton => {
-				boton.addEventListener('click', () => {
-					const paisSeleccionado = boton.getAttribute('data-pais');
+			boton.addEventListener('click', () => {
+			const paisSeleccionado = boton.getAttribute('data-pais');
 
-					botones.forEach(b => {
-						b.classList.remove('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 'shadow-purple-900/30', 'font-bold');
-						b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
-					});
-					boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 'shadow-purple-900/30', 'font-bold');
-					boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+			botones.forEach(b => {
+			b.classList.remove('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 
+			'shadow-purple-900/30', 'font-bold');
+			b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+		});
+		boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 
+		'shadow-purple-900/30', 'font-bold');
+		boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
 
-					tarjetas.forEach(tarjeta => {
-						const paisTarjeta = tarjeta.getAttribute('data-target-pais');
-						
-						if (paisSeleccionado === 'todos' || paisSeleccionado === paisTarjeta) {
-							(tarjeta as HTMLElement).style.display = 'flex';
-							setTimeout(() => tarjeta.classList.remove('opacity-0', 'scale-95'), 10);
-						} else {
-							tarjeta.classList.add('opacity-0', 'scale-95');
-							setTimeout(() => (tarjeta as HTMLElement).style.display = 'none', 150);
-						}
-					});
-				});
-			});
-		</script>
-	</body>
-</html>
+		tarjetas.forEach(tarjeta => {
+			const paisTarjeta = tarjeta.getAttribute('data-target-pais');
+			if (paisSeleccionado === 'todos' || paisSeleccionado === paisTarjeta) {
+			tarjeta.style.display = 'flex';
+			setTimeout(() => tarjeta.classList.remove('opacity-0', 'scale-95'), 10);
+		} else {
+			tarjeta.classList.add('opacity-0', 'scale-95');
+			setTimeout(() => tarjeta.style.display = 'none', 150);
+		}
+	});
+	});
+});
