@@ -744,6 +744,234 @@
       "fechaEfemeride": "10-11"
     }
   ]
+  },
+  {
+  "slug": "the-police",
+  "nombre": "The Police",
+  "pais": "Reino Unido",
+  "genero": "Rock",
+  "subgenero": "New Wave / Reggae Rock / Post-Punk / Pop Rock",
+  "periodo": "1977 - 1986",
+  "imagen": "/thepolice/thepolice-logo.jpg",
+  "resumen": "Trío británico que revolucionó el rock de finales de los 70 mezclando reggae, punk y new wave, convirtiéndose en una de las bandas más exitosas e influyentes de la década.",
+  "historiaLarga": "The Police nació en Londres en 1977 cuando Stewart Copeland, baterista estadounidense radicado en Inglaterra, comenzó a buscar músicos para formar una nueva banda influenciada por el punk y la new wave. Poco después se unió Sting, un bajista y cantante que venía de tocar jazz y rock en Newcastle.\nLa química musical entre ambos fue inmediata, combinando la energía del punk con influencias de reggae y melodías pop más sofisticadas. Finalmente se sumó Andy Summers, guitarrista con experiencia en distintas bandas británicas, completando la formación clásica del grupo.\nAunque comenzaron tocando en pequeños clubes y escenarios underground, The Police rápidamente llamó la atención por su sonido fresco y diferente dentro de la escena británica.\nEn 1978 lanzaron su álbum debut Outlandos d'Amour, iniciando una carrera meteórica que los transformaría en una de las bandas más importantes del rock mundial.",
+  "trayectoria": [
+    {
+      "etapa": "1978 - El Debut Rebelde",
+      "detalle": "The Police irrumpió en la escena mezclando punk, reggae y new wave con canciones como “Roxanne” y “Can't Stand Losing You”.",
+      "disco": "Outlandos d'Amour (1978)",
+      "imagenDisco": "/thepolice/outlandosdamour.jpg",
+      "fechaEfemeride": "17-11"
+    },
+    {
+      "etapa": "1979 - Expansión Internacional",
+      "detalle": "La banda consolidó su sonido con ritmos más complejos y una creciente popularidad mundial gracias a éxitos como “Message in a Bottle”.",
+      "disco": "Reggatta de Blanc (1979)",
+      "imagenDisco": "/thepolice/reggattadeblanc.jpg",
+      "fechaEfemeride": "05-10"
+    },
+    {
+      "etapa": "1980 - Madurez Musical",
+      "detalle": "The Police profundizó su mezcla de rock, reggae y new wave con un sonido más sofisticado y experimental.",
+      "disco": "Zenyatta Mondatta (1980)",
+      "imagenDisco": "/thepolice/zenyattamondatta.jpg",
+      "fechaEfemeride": "03-10"
+    },
+    {
+      "etapa": "1981 - Oscuridad y Complejidad",
+      "detalle": "Con letras más introspectivas y producciones más ambiciosas, la banda mostró una evolución artística importante.",
+      "disco": "Ghost in the Machine (1981)",
+      "imagenDisco": "/thepolice/ghostinthemachine.jpg",
+      "fechaEfemeride": "02-10"
+    },
+    {
+      "etapa": "1983 - La Consagración Mundial",
+      "detalle": "El disco más exitoso de The Police llevó a la banda al estrellato absoluto con clásicos como “Every Breath You Take” y “Wrapped Around Your Finger”.",
+      "disco": "Synchronicity (1983)",
+      "imagenDisco": "/thepolice/synchronicity.jpg",
+      "fechaEfemeride": "17-06"
+    }
+  ]
+  },
+  {
+  "slug": "deep-purple",
+  "nombre": "Deep Purple",
+  "pais": "Reino Unido",
+  "genero": "Rock",
+  "subgenero": "Hard Rock / Heavy Metal / Rock Progresivo / Blues Rock",
+  "periodo": "1968 - Presente",
+  "imagen": "/deeppurple/deeppurple-logo.jpg",
+  "resumen": "Banda pionera del hard rock y heavy metal, reconocida por su virtuosismo musical, riffs históricos y una enorme influencia en el rock pesado mundial.",
+  "historiaLarga": "Deep Purple nació en Inglaterra en 1968 cuando el tecladista Jon Lord y el baterista Ian Paice comenzaron a formar una nueva banda influenciada por el rock psicodélico, el blues y la música clásica. Poco después se unieron Ritchie Blackmore, Rod Evans y Nick Simper, dando origen a la primera formación del grupo.\nDurante sus primeros años, Deep Purple experimentó con sonidos psicodélicos y progresivos mientras desarrollaba una identidad cada vez más pesada y agresiva.\nLa llegada de Ian Gillan y Roger Glover a finales de los años 60 transformó completamente el sonido de la banda, consolidando la formación más clásica e influyente de su historia.\nCon el lanzamiento de discos fundamentales como In Rock y Machine Head, Deep Purple se convirtió en una de las bandas más importantes en el nacimiento del hard rock y el heavy metal.",
+  "trayectoria": [
+    {
+      "etapa": "1968 - El Inicio Psicodélico",
+      "detalle": "El debut de Deep Purple mezcló rock psicodélico, progresivo y versiones reinterpretadas, mostrando una banda todavía en búsqueda de identidad.",
+      "disco": "Shades of Deep Purple (1968)",
+      "imagenDisco": "/deeppurple/shadesofdeeppurple.jpg",
+      "fechaEfemeride": "01-07"
+    },
+    {
+      "etapa": "1968 - Evolución Experimental",
+      "detalle": "La banda continuó explorando sonidos progresivos y arreglos complejos mientras comenzaba a endurecer su estilo.",
+      "disco": "The Book of Taliesyn (1968)",
+      "imagenDisco": "/deeppurple/thebookoftaliesyn.jpg",
+      "fechaEfemeride": "01-10"
+    },
+    {
+      "etapa": "1969 - Psicodelia y Orquesta",
+      "detalle": "Deep Purple incorporó influencias clásicas y arreglos orquestales en uno de los discos más experimentales de su primera etapa.",
+      "disco": "Deep Purple (1969)",
+      "imagenDisco": "/deeppurple/deeppurple1969.jpg",
+      "fechaEfemeride": "21-06"
+    },
+    {
+      "etapa": "1970 - Nacimiento del Hard Rock",
+      "detalle": "Con la llegada de Ian Gillan y Roger Glover, la banda creó un sonido mucho más pesado y agresivo que redefinió el hard rock.",
+      "disco": "Deep Purple in Rock (1970)",
+      "imagenDisco": "/deeppurple/inrock.jpg",
+      "fechaEfemeride": "03-06"
+    },
+    {
+      "etapa": "1971 - Virtuosismo y Velocidad",
+      "detalle": "Fireball mostró una banda más técnica y explosiva, consolidando el estilo clásico de Deep Purple.",
+      "disco": "Fireball (1971)",
+      "imagenDisco": "/deeppurple/fireball.jpg",
+      "fechaEfemeride": "09-07"
+    },
+    {
+      "etapa": "1972 - La Leyenda del Hard Rock",
+      "detalle": "Machine Head se convirtió en uno de los discos más importantes del rock pesado gracias a clásicos eternos como “Smoke on the Water”.",
+      "disco": "Machine Head (1972)",
+      "imagenDisco": "/deeppurple/machinehead.jpg",
+      "fechaEfemeride": "25-03"
+    },
+    {
+      "etapa": "1973 - Rock en Vivo Monumental",
+      "detalle": "La banda mostró toda su potencia escénica en uno de los álbumes en vivo más influyentes de la historia del rock.",
+      "disco": "Made in Japan (1973)",
+      "imagenDisco": "/deeppurple/madeinjapan.jpg",
+      "fechaEfemeride": "15-12"
+    },
+    {
+      "etapa": "1973 - Experimentación y Complejidad",
+      "detalle": "Deep Purple expandió sus composiciones con estructuras más largas y una producción más ambiciosa.",
+      "disco": "Who Do We Think We Are (1973)",
+      "imagenDisco": "/deeppurple/whodowethinkweare.jpg",
+      "fechaEfemeride": "26-01"
+    },
+    {
+      "etapa": "1974 - Cambio de Formación",
+      "detalle": "Con nuevos integrantes, la banda incorporó sonidos funk y soul sin perder la potencia característica del hard rock.",
+      "disco": "Burn (1974)",
+      "imagenDisco": "/deeppurple/burn.jpg",
+      "fechaEfemeride": "15-02"
+    },
+    {
+      "etapa": "1974 - Intensidad y Blues",
+      "detalle": "Stormbringer profundizó las influencias funk y blues en una de las etapas más distintas de la banda.",
+      "disco": "Stormbringer (1974)",
+      "imagenDisco": "/deeppurple/stormbringer.jpg",
+      "fechaEfemeride": "01-11"
+    },
+    {
+      "etapa": "1975 - El Último Capítulo Clásico",
+      "detalle": "Antes de separarse temporalmente, Deep Purple lanzó un disco marcado por tensiones internas y experimentación.",
+      "disco": "Come Taste the Band (1975)",
+      "imagenDisco": "/deeppurple/cometastetheband.jpg",
+      "fechaEfemeride": "10-10"
+    },
+    {
+      "etapa": "1984 - El Regreso Histórico",
+      "detalle": "La reunión de la formación clásica devolvió a Deep Purple al centro del hard rock mundial tras años separados.",
+      "disco": "Perfect Strangers (1984)",
+      "imagenDisco": "/deeppurple/perfectstrangers.jpg",
+      "fechaEfemeride": "29-10"
+    },
+    {
+      "etapa": "1987 - Continuidad del Renacimiento",
+      "detalle": "La banda mantuvo el éxito de su regreso con un sonido moderno pero fiel a sus raíces clásicas.",
+      "disco": "The House of Blue Light (1987)",
+      "imagenDisco": "/deeppurple/thehouseofbluelight.jpg",
+      "fechaEfemeride": "12-01"
+    }
+  ]
+  },
+  {
+  "slug": "led-zeppelin",
+  "nombre": "Led Zeppelin",
+  "pais": "Reino Unido",
+  "genero": "Rock",
+  "subgenero": "Hard Rock / Blues Rock / Folk Rock / Heavy Metal",
+  "periodo": "1968 - 1980",
+  "imagen": "/ledzeppelin/ledzeppelin-logo.jpg",
+  "resumen": "Una de las bandas más influyentes de la historia del rock, reconocida por revolucionar el hard rock con riffs legendarios, virtuosismo musical y una enorme presencia escénica.",
+  "historiaLarga": "Led Zeppelin nació en 1968 cuando el guitarrista Jimmy Page buscaba formar una nueva banda tras la disolución de The Yardbirds. Para el proyecto convocó al cantante Robert Plant, al baterista John Bonham y al bajista y tecladista John Paul Jones.\nDesde sus primeros ensayos, la química entre los cuatro músicos fue inmediata. La banda mezcló blues, folk, hard rock y experimentación sonora, creando un sonido completamente distinto para la época.\nPoco después adoptaron el nombre Led Zeppelin, inspirado en una broma sobre la idea de que el proyecto “caería como un globo de plomo”. Sin embargo, ocurrió exactamente lo contrario.\nEn 1969 lanzaron su álbum debut Led Zeppelin, iniciando una carrera meteórica que transformaría para siempre la historia del rock pesado.",
+  "trayectoria": [
+    {
+      "etapa": "1969 - El Nacimiento del Hard Rock",
+      "detalle": "El álbum debut presentó un sonido pesado, bluesero y revolucionario que marcaría el nacimiento del hard rock moderno.",
+      "disco": "Led Zeppelin (1969)",
+      "imagenDisco": "/ledzeppelin/ledzeppelin1.jpg",
+      "fechaEfemeride": "12-01"
+    },
+    {
+      "etapa": "1969 - Consolidación Explosiva",
+      "detalle": "La banda profundizó su potencia musical con riffs históricos y canciones que definieron el sonido clásico de Led Zeppelin.",
+      "disco": "Led Zeppelin II (1969)",
+      "imagenDisco": "/ledzeppelin/ledzeppelin2.jpg",
+      "fechaEfemeride": "22-10"
+    },
+    {
+      "etapa": "1970 - Experimentación y Folk",
+      "detalle": "El grupo incorporó influencias acústicas y folk sin abandonar la fuerza del hard rock.",
+      "disco": "Led Zeppelin III (1970)",
+      "imagenDisco": "/ledzeppelin/ledzeppelin3.jpg",
+      "fechaEfemeride": "05-10"
+    },
+    {
+      "etapa": "1971 - La Obra Maestra Definitiva",
+      "detalle": "Con canciones como “Stairway to Heaven”, el cuarto álbum de la banda se convirtió en uno de los discos más importantes de la historia del rock.",
+      "disco": "Led Zeppelin IV (1971)",
+      "imagenDisco": "/ledzeppelin/ledzeppelin4.jpg",
+      "fechaEfemeride": "08-11"
+    },
+    {
+      "etapa": "1973 - Grandeza y Virtuosismo",
+      "detalle": "La banda expandió su sonido con estructuras más complejas y una producción monumental.",
+      "disco": "Houses of the Holy (1973)",
+      "imagenDisco": "/ledzeppelin/housesoftheholy.jpg",
+      "fechaEfemeride": "28-03"
+    },
+    {
+      "etapa": "1975 - Épica y Ambición",
+      "detalle": "Physical Graffiti mostró el lado más experimental y diverso de Led Zeppelin en un extenso álbum doble.",
+      "disco": "Physical Graffiti (1975)",
+      "imagenDisco": "/ledzeppelin/physicalgraffiti.jpg",
+      "fechaEfemeride": "24-02"
+    },
+    {
+      "etapa": "1976 - Oscuridad y Misticismo",
+      "detalle": "Presence presentó una banda más intensa y directa en medio de problemas personales y agotamiento físico.",
+      "disco": "Presence (1976)",
+      "imagenDisco": "/ledzeppelin/presence.jpg",
+      "fechaEfemeride": "31-03"
+    },
+    {
+      "etapa": "1979 - El Último Gran Viaje",
+      "detalle": "La banda regresó con un sonido más moderno y experimental antes de su separación definitiva.",
+      "disco": "In Through the Out Door (1979)",
+      "imagenDisco": "/ledzeppelin/inthroughtheoutdoor.jpg",
+      "fechaEfemeride": "15-08"
+    },
+    {
+      "etapa": "1982 - La Despedida Final",
+      "detalle": "Publicado tras la muerte de John Bonham, el álbum reunió grabaciones inéditas y marcó el cierre oficial de la historia de Led Zeppelin.",
+      "disco": "Coda (1982)",
+      "imagenDisco": "/ledzeppelin/coda.jpg",
+      "fechaEfemeride": "19-11"
+    }
+  ]
   }
 
 
