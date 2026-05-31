@@ -162,8 +162,7 @@ const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 		</main>
 
 		<!-- 🧠 Lógicas de Programación Limpias de Filtros, Buscador y Efemérides -->
-<script define:vars={{ historias }}>
-
+		<script define:vars={{ historias }}>
 			// Función helper para procesar IDs de imagen de Sanity a URLs reales en JS
 			function obtenerUrlSanity(source) {
 				if (!source || !source.asset || !source.asset._ref) return '';
@@ -173,6 +172,7 @@ const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 			}
 
 			// === 💿 LÓGICA DE PORTADA ALEATORIA ===
+
 			const imgPortada = document.getElementById('imagen-random-portada');
 			const placeholderPortada = document.getElementById('placeholder-random-portada');
 
