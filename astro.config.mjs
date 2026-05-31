@@ -1,11 +1,8 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import vercel from '@astrojs/vercel/serverless';
-import { sanity } from 'astro-sanity'; // <-- Corregido acá
+import { sanity } from 'astro-sanity';
 
 export default defineConfig({
-  output: 'server',
-  adapter: vercel(),
   integrations: [
     tailwind(),
     sanity({
