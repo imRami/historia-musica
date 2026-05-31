@@ -172,18 +172,19 @@ const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 			}
 
 			// === 💿 LÓGICA DE PORTADA ALEATORIA ===
-
 			const imgPortada = document.getElementById('imagen-random-portada');
 			const placeholderPortada = document.getElementById('placeholder-random-portada');
 
 			let todasLasPortadas = [];
-			historias.forEach(artista => {
-				if (artista.trayectoria) {
-					artista.trayectoria.forEach(h => {
-						if (h.imagenDisco) todasLasPortadas.push(obtenerUrlSanity(h.imagenDisco));
-					});
-				}
-			});
+			if (Array.isArray(historias)) {
+				historias.forEach(artista => {
+					if (artista.trayectoria) {
+						artista.trayectoria.forEach(h => {
+							if (h.imagenDisco) todasLasPortadas.push(obtenerUrlSanity(h.imagenDisco));
+						});
+					}
+				});
+			}
 
 			if (todasLasPortadas.length > 0 && imgPortada && placeholderPortada) {
 				const portadaRandom = todasLasPortadas[Math.floor(Math.random() * todasLasPortadas.length)];
@@ -196,7 +197,7 @@ const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 			const input = document.getElementById('buscador-input');
 			const resultadosContenedor = document.getElementById('buscador-resultados');
 
-			if (input && resultadosContenedor) {
+			if (input && resultadosContenedor && Array.isArray(historias)) {
 				input.addEventListener('input', (e) => {
 					const valor = e.target.value.toLowerCase().trim();
 					if (valor === '') {
@@ -206,7 +207,7 @@ const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 					}
 
 					const filtrados = historias.filter(artista => 
-						artista.nombre.toLowerCase().includes(valor) ||
+						(artista.nombre && artista.nombre.toLowerCase().includes(valor)) ||
 						(artista.genero && artista.genero.toLowerCase().includes(valor)) ||
 						(artista.subgenero && artista.subgenero.toLowerCase().includes(valor)) ||
 						(artista.pais && artista.pais.toLowerCase().includes(valor))
@@ -267,20 +268,3 @@ const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 				});
 			});
 		</script>
-
-		boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 
-		'shadow-purple-900/30', 'font-bold');
-		boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
-
-		tarjetas.forEach(tarjeta => {
-			const paisTarjeta = tarjeta.getAttribute('data-target-pais');
-			if (paisSeleccionado === 'todos' || paisSeleccionado === paisTarjeta) {
-			tarjeta.style.display = 'flex';
-			setTimeout(() => tarjeta.classList.remove('opacity-0', 'scale-95'), 10);
-		} else {
-			tarjeta.classList.add('opacity-0', 'scale-95');
-			setTimeout(() => tarjeta.style.display = 'none', 150);
-		}
-	});
-	});
-});
