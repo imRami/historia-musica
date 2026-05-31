@@ -1,5 +1,5 @@
 ---
-import { client, urlFor } from '../sanityClient';
+import { client, urlFor } from '/src/sanityClient';
 
 // Traemos todas las bandas de Sanity ordenadas alfabéticamente por nombre
 const historias = await client.fetch(`*[_type == "banda"] | order(nombre asc)`);
