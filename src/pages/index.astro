@@ -1,9 +1,13 @@
 ---
-import historias from '../data/historias.json';
+import { client, urlFor } from '../sanityClient';
 
-// Lista de países sin repetir para los botones
-const paises = [...new Set(historias.map(item => item.pais))];
+// Traemos todas las bandas de Sanity ordenadas alfabéticamente por nombre
+const historias = await client.fetch(`*[_type == "banda"] | order(nombre asc)`);
+
+// Generamos la lista de países sin repetir
+const paises = [...new Set(historias.map(item => item.pais).filter(Boolean))];
 ---
+
 
 <html lang="es">
 	<head>
@@ -124,7 +128,7 @@ const paises = [...new Set(historias.map(item => item.pais))];
 							class="tarjeta-artista flex flex-col justify-between bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-900 hover:border-zinc-800/80 rounded-2xl transition-all duration-300 hover:-translate-y-1 relative group cursor-pointer overflow-hidden"
 						>
 							<div class="w-full h-48 overflow-hidden relative">
-								<img src={artista.imagen} alt={artista.nombre} class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+								<img src={urlFor(artista.imagen)} alt={artista.nombre} class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
 								<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
 							</div>
 
@@ -158,14 +162,28 @@ const paises = [...new Set(historias.map(item => item.pais))];
 		</main>
 
 		<!-- 🧠 Lógicas de Programación Limpias de Filtros, Buscador y Efemérides -->
-		<script define:vars={{ historias }}>
+<script define:vars={{ historias }}>
+
+			// Función helper para procesar IDs de imagen de Sanity a URLs reales en JS
+			function obtenerUrlSanity(source) {
+				if (!source || !source.asset || !source.asset._ref) return '';
+				const ref = source.asset._ref;
+				const [ , id, dimensions, extension] = ref.split('-');
+				return `https://sanity.io{id}-${dimensions}.${extension}`;
+			}
+
 			// === 💿 LÓGICA DE PORTADA ALEATORIA ===
 			const imgPortada = document.getElementById('imagen-random-portada');
 			const placeholderPortada = document.getElementById('placeholder-random-portada');
 
-			const todasLasPortadas = historias.flatMap(artista => 
-				artista.trayectoria ? artista.trayectoria.filter(h => h.imagenDisco).map(h => h.imagenDisco) : []
-			);
+			let todasLasPortadas = [];
+			historias.forEach(artista => {
+				if (artista.trayectoria) {
+					artista.trayectoria.forEach(h => {
+						if (h.imagenDisco) todasLasPortadas.push(obtenerUrlSanity(h.imagenDisco));
+					});
+				}
+			});
 
 			if (todasLasPortadas.length > 0 && imgPortada && placeholderPortada) {
 				const portadaRandom = todasLasPortadas[Math.floor(Math.random() * todasLasPortadas.length)];
@@ -174,82 +192,43 @@ const paises = [...new Set(historias.map(item => item.pais))];
 				placeholderPortada.classList.add('hidden');
 			}
 
-			// === 📅 LÓGICA DE EFEMÉRIDES MÚLTIPLES AUTOMÁTICAS ===
-			const seccionEfemeride = document.getElementById('seccion-efemeride');
-			const efemerideContenido = document.getElementById('efemeride-contenido');
+			// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO VISUAL ===
+			const input = document.getElementById('buscador-input');
+			const resultadosContenedor = document.getElementById('buscador-resultados');
 
-			const hoy = new Date();
-			const dia = String(hoy.getDate()).padStart(2, '0');
-			const mes = String(hoy.getMonth() + 1).padStart(2, '0');
-			const fechaHoyTexto = `\({dia}-\){mes}`;
+			if (input && resultadosContenedor) {
+				input.addEventListener('input', (e) => {
+					const valor = e.target.value.toLowerCase().trim();
+					if (valor === '') {
+						resultadosContenedor.classList.add('hidden');
+						resultadosContenedor.innerHTML = '';
+						return;
+					}
 
-			let efemeridesDelDia = [];
+					const filtrados = historias.filter(artista => 
+						artista.nombre.toLowerCase().includes(valor) ||
+						(artista.genero && artista.genero.toLowerCase().includes(valor)) ||
+						(artista.subgenero && artista.subgenero.toLowerCase().includes(valor)) ||
+						(artista.pais && artista.pais.toLowerCase().includes(valor))
+					);
 
-			for (const artista of historias) {
-				if (artista.trayectoria) {
-					const coincidencias = artista.trayectoria.filter(h => h.fechaEfemeride === fechaHoyTexto);
-					coincidencias.forEach(hito => {
-						efemeridesDelDia.push({ hito, artista });
-					});
-				}
-			}
-
-			if (efemeridesDelDia.length > 0) {
-				seccionEfemeride.classList.remove('hidden');
-				efemerideContenido.innerHTML = efemeridesDelDia.map(({ hito, artista }, indice) => `
-					<div class="flex flex-col md:flex-row gap-6 items-start md:items-center \${indice > 0 ? 'border-t border-purple-900/40 pt-6 mt-6' : ''}">
-						<div class="flex-1">
-							<span class="text-[10px] font-mono font-bold text-purple-400 bg-purple-950/60 border border-purple-900/50 px-2 py-0.5 rounded uppercase">
-								\${artista.nombre}
-							</span>
-							<h4 class="text-2xl font-black text-white tracking-tight mt-2">\${hito.etapa}</h4>
-							<p class="text-zinc-300 text-sm mt-2 leading-relaxed max-w-2xl">\${hito.detalle}</p>
-
-							Ver biografía completa →
-
-							${hito.imagenDisco ? <div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden 
-							border border-zinc-800 shadow-md"> <img src="\({hito.imagenDisco}" alt="\)
-							{hito.disco}" class="w-full h-full object-cover" /> </div> : ''}
-
-							`).join('');
-						}
-
-						// === 🔍 LÓGICA DEL BUSCADOR PREDICTIVO VISUAL ===
-						const input = document.getElementById('buscador-input');
-						const resultadosContenedor = document.getElementById('buscador-resultados');
-
-						if (input && resultadosContenedor) {
-							input.addEventListener('input', (e) => {
-								const valor = e.target.value.toLowerCase().trim();
-								if (valor === '') {
-								resultadosContenedor.classList.add('hidden');
-								resultadosContenedor.innerHTML = '';
-								return;
-							}
-
-							const filtrados = historias.filter(artista =>
-							artista.nombre.toLowerCase().includes(valor) ||
-							artista.genero.toLowerCase().includes(valor) ||
-							artista.subgenero.toLowerCase().includes(valor) ||
-							artista.pais.toLowerCase().includes(valor)
-						);
-
-						if (filtrados.length > 0) {
+					if (filtrados.length > 0) {
 						resultadosContenedor.classList.remove('hidden');
-						resultadosContenedor.innerHTML = filtrados.map(artista => <a href="/${artista.slug}" 
-						class="flex items-center gap-4 px-4 py-3 hover:bg-zinc-800/60 transition group 
-						border-b border-zinc-800/40 last:border-0"> <div class="w-10 h-10 rounded-full 
-						overflow-hidden shrink-0 border border-zinc-700"> <img src="${artista.imagen}" 
-						alt="${artista.nombre}" class="w-full h-full object-cover" /> </div> <div 
-						class="flex-1 text-left"> <h4 class="text-sm font-bold text-zinc-200 group-
-						hover:text-purple-400 transition">${artista.nombre}</h4> <p class="text-[10px] font-
-						mono text-zinc-500 mt-0.5">${artista.pais} • ${artista.subgenero}</p> </div> <span 
-						class="text-zinc-600 group-hover:text-purple-400 transition text-sm font-mono pr-
-						1">→</span> </a>).join('');
+						resultadosContenedor.innerHTML = filtrados.map(artista => `
+							<a href="/${artista.slug?.current || artista.slug}" class="flex items-center gap-4 px-4 py-3 hover:bg-zinc-800/60 transition group border-b border-zinc-800/40 last:border-0">
+								<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-zinc-700">
+									<img src="${obtenerUrlSanity(artista.imagen)}" alt="${artista.nombre}" class="w-full h-full object-cover" />
+								</div>
+								<div class="flex-1 text-left">
+									<h4 class="text-sm font-bold text-zinc-200 group-hover:text-purple-400 transition">${artista.nombre}</h4>
+									<p class="text-[10px] font-mono text-zinc-500 mt-0.5">${artista.pais} • ${artista.subgenero}</p>
+								</div>
+								<span class="text-zinc-600 group-hover:text-purple-400 transition text-sm font-mono pr-1">→</span>
+							</a>
+						`).join('');
 					} else {
 						resultadosContenedor.classList.remove('hidden');
-						resultadosContenedor.innerHTML = <div class="px-4 py-4 text-
-						xs font-mono text-zinc-500 text-center">⚠️ No se encontraron artistas vinculados</div>;
+						resultadosContenedor.innerHTML = `<div class="px-4 py-4 text-xs font-mono text-zinc-500 text-center">⚠️ No se encontraron artistas</div>`;
 					}
 				});
 
@@ -265,14 +244,30 @@ const paises = [...new Set(historias.map(item => item.pais))];
 			const tarjetas = document.querySelectorAll('.tarjeta-artista');
 
 			botones.forEach(boton => {
-			boton.addEventListener('click', () => {
-			const paisSeleccionado = boton.getAttribute('data-pais');
+				boton.addEventListener('click', () => {
+					const paisSeleccionado = boton.getAttribute('data-pais');
 
-			botones.forEach(b => {
-			b.classList.remove('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 
-			'shadow-purple-900/30', 'font-bold');
-			b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
-		});
+					botones.forEach(b => {
+						b.classList.remove('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 'shadow-purple-900/30', 'font-bold');
+						b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+					});
+					boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 'shadow-purple-900/30', 'font-bold');
+					boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+
+					tarjetas.forEach(tarjeta => {
+						const paisTarjeta = tarjeta.getAttribute('data-target-pais');
+						if (paisSeleccionado === 'todos' || paisSeleccionado === paisTarjeta) {
+							tarjeta.style.display = 'flex';
+							setTimeout(() => tarjeta.classList.remove('opacity-0', 'scale-95'), 10);
+						} else {
+							tarjeta.classList.add('opacity-0', 'scale-95');
+							setTimeout(() => tarjeta.style.display = 'none', 150);
+						}
+					});
+				});
+			});
+		</script>
+
 		boton.classList.add('bg-purple-600', 'text-white', 'border-purple-500', 'shadow-lg', 
 		'shadow-purple-900/30', 'font-bold');
 		boton.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
